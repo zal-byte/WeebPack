@@ -1,0 +1,162 @@
+ {
+    "namespace": "neko_button",
+
+    "toggle_button_control": {
+      "type": "panel",
+      "$glyph_offset|default": [ 1, 0 ],
+      "$glyph_anchor_from|default": "left_middle",
+      "$glyph_anchor_to|default": "left_middle",
+      "$button_label_offset|default": [ 22, -1 ],
+      "layer": 2,
+      "controls": [
+        {
+          "glyph": {
+            "type": "image",
+            "anchor_from": "$glyph_anchor_from",
+            "anchor_to": "$glyph_anchor_to",
+            "offset": "$glyph_offset",
+            "texture": "$glyph_texture",
+            "size": "$glyph_size",
+            "layer": 3,
+            "color": "$glyph_color",
+            "alpha": "$content_alpha",
+  
+            "$glyph_bindings|default": [],
+            "bindings": "$glyph_bindings"
+          }
+        },
+        {
+          "glyph_color": {
+            "type": "image",
+            "anchor_from": "$glyph_anchor_from",
+            "anchor_to": "$glyph_anchor_to",
+            "offset": "$glyph_offset",
+            "texture": "$glyph_color_texture",
+            "size": "$glyph_size",
+            "layer": 4,
+            "alpha": "$content_alpha",
+  
+            "$glyph_color_bindings|default": [],
+            "bindings": "$glyph_color_bindings"
+          }
+        },
+        {
+          "progress_loading_bars@progress.progress_loading_bars": {
+            "anchor_from": "left_middle",
+            "anchor_to": "left_middle",
+            "color": "$glyph_color",
+            "offset": [ 5, 0 ],
+            "layer": 5,
+            "size": "$glyph_size",
+            "visible": false,
+            "$glyph_progress_bindings|default": [],
+            "bindings": "$glyph_progress_bindings"
+          }
+        },
+        {
+          "tab_button_text": {
+            "type": "label",
+            "font_type": "MinecraftTen", //default "OldSmoothFont",
+            "anchor_from": "left_middle",
+            "anchor_to": "left_middle",
+            "size": [ "97% - 25px", "default" ],
+            "max_size": [ "99% - 25px", "10px" ],
+            "offset": "$button_label_offset",
+            "text": "$button_text",
+            "layer": 3,
+            "color": "$text_color",
+            "alpha": "$content_alpha",
+  
+            "$button_text_binding_type|default": "none",
+            "$button_text_grid_collection_name|default": "",
+            "$button_text_binding_condition|default": "none",
+  
+            "bindings": [
+              {
+                "binding_type": "$button_text_binding_type",
+                "binding_condition": "$button_text_binding_condition",
+                "binding_collection_name": "$button_text_grid_collection_name",
+                "binding_name": "$button_text",
+                "binding_name_override": "$button_text"
+              }
+            ]
+          }
+        }
+      ]
+    },
+  
+
+
+    "fxbutton1@common_buttons.light_text_button": {
+      "$default_button_texture|default": "textures/ui-x/buttons/play/light",
+      "$hover_button_texture|default": "textures/ui-x/buttons/play/lighthover",
+      "$pressed_button_texture|default": "textures/ui-x/buttons/play/lightpressed",
+      "$button_type_panel": "neko_button.toggle_button_control",
+      "anchor_from": "top_left",
+      "anchor_to": "top_left",
+      "$border_visible": false,
+      "size": [ "100% - 4px" , "100% - 3px" ],
+      "$glyph_size": [ 13, 13 ],
+      "$default_text_color|default": [ 1.0, 1.0, 1.0 ],
+      "$hover_text_color|default": [ 0.88, 0.98, 1.00 ],
+      "$pressed_text_color|default": [ 0.36, 0.36, 0.36 ],
+      "$locked_text_color|default": [ 0.72, 0.00, 0.00 ]
+    },   
+
+    "button_panel@common_buttons.new_ui_binding_button_label": {
+      "$anchor|default": "middle",
+      "font_type": "MinecraftTen",
+      "offset": [ 0 , -1.1 ], //  X , Y
+      "$glyph_offset|default": [ 0, 0 ]
+    },
+
+
+    "play_button@neko_button.fxbutton1": {
+      "$glyph_texture": "textures/ui-x/icon-new/play",
+      "$glyph_color_texture": "textures/ui-x/icon-new/play",
+      "$default_text_color|default": [ 0.0, 0.0, 0.0 ],
+      "$hover_text_color|default": [ 0.0, 0.0, 0.0 ],
+      "$pressed_text_color|default": [ 0.36, 0.36, 0.36 ],
+      "$locked_text_color|default": [ 0.72, 0.00, 0.00 ],
+      "$default_button_texture|default": "textures/ui-x/buttons/play/button_borderless_light",
+      "$hover_button_texture|default": "textures/ui-x/buttons/play/button_borderless_lighthover",
+      "$pressed_button_texture|default": "textures/ui-x/buttons/play/button_borderless_light",
+      "$pressed_button_name": "$play_button_target",
+      "$button_text": "PLAY !" //"menu.play"
+    },
+
+   "store_button@neko_button.fxbutton1": {
+     "$glyph_texture": "textures/ui-x/icon-new/store_icon",
+     "$glyph_color_texture": "textures/ui-x/icon-new/store_icon",
+     "$pressed_button_name": "button.menu_store",
+     "$button_text": "menu.store"
+    },
+
+   "achievements_button@neko_button.fxbutton1": {
+      "$glyph_texture": "textures/ui-x/icon-new/achievements_icon",
+      "$glyph_color_texture": "textures/ui-x/icon-new/achievements_icon",
+      "$pressed_button_name": "button.menu_achievements",
+      "$button_text": "menu.achievements"
+    },
+
+    "settings_button@neko_button.fxbutton1": {
+      "$glyph_texture": "textures/ui-x/icon-new/settings_icon",
+      "$glyph_color_texture": "textures/ui-x/icon-new/settings_icon",
+      "$pressed_button_name": "button.menu_settings",
+      "$button_text": "menu.settings"
+    },
+
+    "exit_button@neko_button.fxbutton1": {
+      "$glyph_texture": "textures/ui-x/icon/exit_icon",
+      "$glyph_color_texture": "textures/ui-x/icon/exit_icon",
+      "$pressed_button_name": "button.menu_exit",
+      "$button_text": "Keluar"
+    },
+
+    "profile_button@neko_button.fxbutton1": {
+      "$glyph_texture": "textures/ui-x/icon-new/profile_icon",
+      "$glyph_color_texture": "textures/ui-x/icon-new/profile_icon",
+      "$pressed_button_name": "button.to_profile_screen",
+      "$button_text": "profileScreen.header"
+    }
+  }

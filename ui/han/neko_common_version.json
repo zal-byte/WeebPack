@@ -1,0 +1,32 @@
+{
+    "namespace": "neko_c",
+
+    ///////////////////////////////////////
+    //
+    // MAIN UI
+    //
+    ///////////////////////////////////////
+
+    "weebs@loli.label": {
+      "layer": 5,
+      "text": "Project UI Version 1.1.0\nCreated By Han",
+      "font_size": "small"
+    },
+
+    ///////////////////////////////////////
+    //
+    // S E T T I N G S
+    //
+    ///////////////////////////////////////
+
+    "logo_ui": { "type": "image", "texture": "textures/ui-x/icon/title", "size": [ "100%" , 95 ]},
+    // Versi
+    "version_title@custom_settings_section.fxn_label": { "text": "Version : ( TEST - RELEASE )" ,"shadow": false },
+    "version_number@custom_settings_section.fxn_label": { "font_size":"large", "text": "v1.1.0 | Loli" , "shadow": true },
+    "version_about@custom_settings_section.fxn_label": { "text": "Loli = Beta\nMilff = Stable" ,"shadow": false },
+
+    // Build
+    "build_title@custom_settings_section.fxn_label": { "text": "Build : " ,"shadow": false },
+    "build_number@custom_settings_section.fxn_label": { "font_size":"large", "text": "4190" , "shadow": true },
+    "about@custom_settings_section.fxn_label": { "text": "Aqua UI\nCreated By Farhan(Han)" ,"shadow": false }
+}
