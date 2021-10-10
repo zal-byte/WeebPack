@@ -1309,9 +1309,6 @@
     ],
     "controls": [
       {
-        "online_buttons_panel@start.online_buttons_panel" : {}
-      },
-      {
         "button_panel@rem.button_panel":{}
       },
       {
