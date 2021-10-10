@@ -111,21 +111,18 @@
       "type": "label",
       "size": [ "100% - 10px" , "default" ],
       "text_alignment": "right",
-      "font_size": "small",
       "color": [ 1.0, 1.0, 1.0],
       "layer": 2
     },
 
     "copyright@loli.label": {
     "layer": 5,
-    "text": "menu.copyright",
-  	"font_size": ""
+    "text": "menu.copyright"
     },
    
     "version@loli.label": {
     "layer": 5,
     "text": "#version",
-  	"font_size": "",
     "bindings": [
         {
          "binding_name": "#version"
