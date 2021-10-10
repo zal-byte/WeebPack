@@ -1506,9 +1506,9 @@
     "anchor_to": "top_middle",
     "controls": [
       { "panel_b@settings_common.panel_b": {}},
-      { "panel_c@settings_common.panel_c": {}},
       { "selector_area@settings_common.selector_area": {} },
-      { "content_area@settings_common.content_area": {} }
+      { "content_area@settings_common.content_area": {} },
+      { "panel_c@settings_common.panel_c": {}}
     ]
   },
 
@@ -1549,7 +1549,7 @@
   "selector_area": {
     "type": "panel",
     "offset": [ 2, "37px" ],
-    "size": [ "30% - 3px", "90% - 40px" ],
+    "size": [ "30% - 3px", "90% - 43px" ],
     "anchor_from": "top_left",
     "anchor_to": "top_left",
     "layer": 2,
@@ -1579,7 +1579,7 @@
   "content_area": {
     "type": "panel",
     "offset": [ "-5px", "37px" ],
-    "size": [ "70% - 8px", "90% - 40px" ],
+    "size": [ "70% - 8px", "90% - 43px" ],
     "anchor_from": "top_right",
     "anchor_to": "top_right",
     "layer": 1,
