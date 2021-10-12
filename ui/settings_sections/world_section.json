@@ -155,13 +155,13 @@
 
           "$default_text_color|default": [ 0.0, 0.0, 0.0 ],
           "$hover_text_color|default": [ 0.0, 0.0, 0.0 ],
-          "$pressed_text_color|default": [ 0.0, 0.0, 0.0 ],
-          "$locked_text_color|default": [ 0.0, 0.0, 0.0 ],
+          "$pressed_text_color|default": [ 1.0, 1.0 ,1.0 ],
+          "$locked_text_color|default": [ 0.7, 0.7, 0.7 ],
 
-          "$default_button_texture|default": "textures/ui-x/buttons/play/light",
-          "$hover_button_texture|default": "textures/ui-x/buttons/play/lighthover",
-          "$pressed_button_texture|default": "textures/ui-x/buttons/play/lightpressed",
-          "$locked_button_texture|default": "textures/ui-x/buttons/play/lightpressednohover",
+          "$default_button_texture|default": "textures/ui-x/buttons/play/play",
+          "$hover_button_texture|default": "textures/ui-x/buttons/play/play_hover",
+          "$pressed_button_texture|default": "textures/ui-x/buttons/play/play_pressed",
+          "$locked_button_texture|default": "textures/ui-x/buttons/play/play_pressed_no_hover",
 
           "$button_text": "menu.play",
           "default_focus_precedence": 1,
