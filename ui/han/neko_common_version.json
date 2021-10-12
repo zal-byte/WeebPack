@@ -9,7 +9,7 @@
 
     "weebs@loli.label": {
       "layer": 5,
-      "text": "Aqua UI v1.1.0 Loli\nCreated By Han",
+      "text": "Aqua UI v1.2.0 Milff Created By Han",
       "font_size": "small"
     },
 
@@ -21,12 +21,12 @@
 
     "logo_ui": { "type": "image", "texture": "textures/ui-x/icon/title", "size": [ "100%" , 95 ]},
     // Versi
-    "version_title@custom_settings_section.fxn_label": { "text": "Version : ( TEST - RELEASE )" ,"shadow": false },
-    "version_number@custom_settings_section.fxn_label": { "font_size":"large", "text": "v1.1.0 | Loli" , "shadow": true },
+    "version_title@custom_settings_section.fxn_label": { "text": "Version :" ,"shadow": false },
+    "version_number@custom_settings_section.fxn_label": { "font_size":"large", "text": "v1.2 | Milff" , "shadow": true },
     "version_about@custom_settings_section.fxn_label": { "text": "Loli = Beta\nMilff = Stable" ,"shadow": false },
 
     // Build
     "build_title@custom_settings_section.fxn_label": { "text": "Build : " ,"shadow": false },
-    "build_number@custom_settings_section.fxn_label": { "font_size":"large", "text": "4190" , "shadow": true },
+    "build_number@custom_settings_section.fxn_label": { "font_size":"large", "text": "051" , "shadow": true },
     "about@custom_settings_section.fxn_label": { "text": "Aqua UI\nCreated By Farhan(Han)" ,"shadow": false }
 }
