@@ -1355,17 +1355,7 @@
                       "anchor_to": "center",
                       "size": [ "30px", "100%" ],
                       "controls": [
-                        {
-                          "back_button_2@common_buttons.light_content_button": {
-                            "$default_button_texture|default": "textures/ui-x/buttons/borderless/light",
-                            "$hover_button_texture|default": "textures/ui-x/buttons/borderless/lighthover",
-                            "$pressed_button_texture|default": "textures/ui-x/buttons/borderless/lightpressed",
-                            "$locked_button_texture|default": "textures/ui-x/buttons/borderless/lightpressednohover",
-                            "size": [ 25, 25 ],
-                            "$button_content": "settings_common.back_icon",
-                            "$pressed_button_name": "button.menu_exit"
-                          }
-                        }
+                        { "back_button@settings_common.back_button": {}}
                       ]
                     }
                   },
