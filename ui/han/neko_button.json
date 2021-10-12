@@ -3,10 +3,10 @@
 
     "toggle_button_control": {
       "type": "panel",
-      "$glyph_offset|default": [ 1, 0 ],
-      "$glyph_anchor_from|default": "left_middle",
-      "$glyph_anchor_to|default": "left_middle",
-      "$button_label_offset|default": [ 22, -1 ],
+      "$glyph_offset|default": [ -2, 0 ],
+      "$glyph_anchor_from|default": "right_middle",
+      "$glyph_anchor_to|default": "right_middle",
+      "$button_label_offset|default": [ -10, -1 ],
       "layer": 2,
       "controls": [
         {
@@ -56,11 +56,12 @@
         {
           "tab_button_text": {
             "type": "label",
+            "text_alignment": "right",
             "font_type": "MinecraftTen", //default "OldSmoothFont",
-            "anchor_from": "left_middle",
-            "anchor_to": "left_middle",
-            "size": [ "97% - 25px", "default" ],
-            "max_size": [ "99% - 25px", "10px" ],
+            "anchor_from": "middle",
+            "anchor_to": "middle",
+            "size": [ "default", "default" ],
+            "max_size": [ "99% - 15px", "10px" ],
             "offset": "$button_label_offset",
             "text": "$button_text",
             "layer": 3,
@@ -90,8 +91,8 @@
       "$glyph_offset|default": [ 1, 0 ],
       "$glyph_anchor_from|default": "left_middle",
       "$glyph_anchor_to|default": "left_middle",
-      "$button_label_offset|default": [ 22, -5 ],
-      "$button_label_offset_2|default": [ 22, 5 ],
+      "$button_label_offset|default": [ 0, -5 ],
+      "$button_label_offset_2|default": [ 0, 5 ],
       "layer": 2,
       "controls": [
         {
@@ -128,9 +129,10 @@
         {
           "play_label": {
             "type": "label",
+            "text_alignment": "center",
             "font_type": "MinecraftTen", //default "OldSmoothFont",
-            "anchor_from": "left_middle",
-            "anchor_to": "left_middle",
+            "anchor_from": "middle",
+            "anchor_to": "middle",
             "size": [ "97% - 25px", "default" ],
             "max_size": [ "99% - 25px", "10px" ],
             "offset": "$button_label_offset",
@@ -143,17 +145,17 @@
         {
           "minecraft_version_label": {
             "type": "label",
+            "text_alignment": "center",
             "font_size": "small",
             "font_type": "MinecraftTen",
-            "anchor_from": "left_middle",
-            "anchor_to": "left_middle",
+            "anchor_from": "middle",
+            "anchor_to": "middle",
             "size": [ "97% - 25px", "default" ],
             "max_size": [ "99% - 25px", "10px" ],
             "offset": "$button_label_offset_2",
-            "text": "MC 1.17.30",
+            "text": "LOCAL WORLD | SERVER",
             "layer": 3,
-            "color": "$text_color",
-            "alpha": "$content_alpha"
+            "color": "$text_color"
           }
         }
       ]
@@ -162,22 +164,22 @@
 
 
     "fxbutton1@common_buttons.light_text_button": {
-      "$default_button_texture|default": "textures/ui-x/buttons/play/light",
-      "$hover_button_texture|default": "textures/ui-x/buttons/play/lighthover",
-      "$pressed_button_texture|default": "textures/ui-x/buttons/play/lightpressed",
+      "$default_button_texture|default": "",
+      "$hover_button_texture|default": "",
+      "$pressed_button_texture|default": "",
       "$button_type_panel": "neko_button.toggle_button_control",
       "anchor_from": "top_left",
       "anchor_to": "top_left",
       "$border_visible": false,
-      "size": [ "100% - 4px" , "100% - 3px" ],
+      "size": [ "100% - 4px" , "100%" ],
       "$glyph_size": [ 13, 13 ],
       "$default_text_color|default": [ 1.0, 1.0, 1.0 ],
-      "$hover_text_color|default": [ 0.88, 0.98, 1.00 ],
-      "$pressed_text_color|default": [ 0.36, 0.36, 0.36 ],
+      "$hover_text_color|default": [ 0.10, 0.55, 1.00 ],
+      "$pressed_text_color|default": [ 0.00, 0.82, 1.00 ],
       "$locked_text_color|default": [ 0.72, 0.00, 0.00 ]
     },   
 
-    "button_panel@common_buttons.new_ui_binding_button_label": {
+    "han_ganteng@common_buttons.new_ui_binding_button_label": {
       "$anchor|default": "middle",
       "font_type": "MinecraftTen",
       "offset": [ 0 , -1.1 ], //  X , Y
@@ -186,18 +188,20 @@
 
 
     "play_button@neko_button.fxbutton1": {
+      "$border_visible": true,
+      "size": [ "100%" , "100%" ],
       "$button_type_panel": "neko_button.yuki",
       "$glyph_texture": "textures/ui-x/icon-new/play",
       "$glyph_color_texture": "textures/ui-x/icon-new/play",
       "$default_text_color|default": [ 0.0, 0.0, 0.0 ],
-      "$hover_text_color|default": [ 0.0, 0.0, 0.0 ],
+      "$hover_text_color|default": [ 1.0, 1.0, 1.0 ],
       "$pressed_text_color|default": [ 0.36, 0.36, 0.36 ],
       "$locked_text_color|default": [ 0.72, 0.00, 0.00 ],
       "$default_button_texture|default": "textures/ui-x/buttons/play/button_borderless_light",
       "$hover_button_texture|default": "textures/ui-x/buttons/play/button_borderless_lighthover",
       "$pressed_button_texture|default": "textures/ui-x/buttons/play/button_borderless_light",
       "$pressed_button_name": "$play_button_target",
-      "$button_text": "PLAY !" //"menu.play"
+      "$button_text": "menu.play"
     },
 
    "store_button@neko_button.fxbutton1": {
