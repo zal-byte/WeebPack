@@ -1411,6 +1411,7 @@
   // upper right title
   "section_title_label@settings_common.han_a": {
     "offset": [ 5 , 1 ],
+    "color": [ 0.10, 0.84, 1.00 ],
     "text": "#section_title",
     "bindings": [
       {
@@ -1433,17 +1434,16 @@
   "dialog_titles": {
     "type": "stack_panel",
     "orientation": "vertical",
-    "anchor_from": "top_left",
-    "anchor_to": "top_left",
-    "size": [ "15%", 35 ],
-    "offset": [ 35, 2.5 ],
+    "anchor_from": "middle_left",
+    "anchor_to": "middle_left",
+    "size": [ "100%", 35 ],
     "controls": [
       {
         "dialog_title_label@settings_common.dialog_title_label": {
           "size": [ "default", "default" ]
         }
       },
-      { "spaces": {"type": "panel", "size": [ 2, 2 ]}},
+      { "spaces": {"type": "panel", "size": [ 1, 1 ]}},
       {
         "section_title_label@settings_common.section_title_label": {
           "size": [ "default", "default" ]
@@ -1459,13 +1459,19 @@
   },
 
   "back_button@common_buttons.light_content_button": {
-    "$default_button_texture|default": "textures/ui-x/buttons/borderless/light",
-    "$hover_button_texture|default": "textures/ui-x/buttons/borderless/lighthover",
-    "$pressed_button_texture|default": "textures/ui-x/buttons/borderless/lightpressed",
-    "$locked_button_texture|default": "textures/ui-x/buttons/borderless/lightpressednohover",
-    "size": [ 25, 25 ],
+    "size": [ 23, 23 ],
     "$button_content": "settings_common.back_icon",
     "$pressed_button_name": "button.menu_exit"
+  },
+
+  "button_panel_a": {
+    "type": "panel",
+    "size": [ "23px" , "100%" ]
+  },
+
+  "button_panel_b": {
+    "type": "panel",
+    "size": [ "120px" , "100%" ]
   },
 
   "panel_a": {
@@ -1473,11 +1479,10 @@
     "orientation": "horizontal",
     "anchor_from": "top_left",
     "anchor_to": "top_left",
-    "size": [ "100%", 35 ],
     "controls": [
-      { "back_button@settings_common.back_button": {}},
-      { "space": {"type": "panel", "size": [ 5 , 5 ]}},
-      { "dialog_titles@settings_common.dialog_titles": {} }
+      { "button_panel_a@settings_common.button_panel_a": { "anchor_from": "center", "anchor_to": "center", "controls": [{ "back_button@settings_common.back_button": {}}]}},
+      { "space": {"type": "panel", "size": [ 3 , 3 ]}},
+      { "button_panel_a@settings_common.button_panel_a": { "anchor_from": "center", "anchor_to": "center", "controls": [{ "dialog_titles@settings_common.dialog_titles": {}}]}}
     ]
   },
 
@@ -1485,10 +1490,10 @@
     "anchor_from": "top_left",
     "anchor_to": "top_left",
     "offset": [ 0 , -2.5 ],
-    "size": [ "100%" , "35px" ],
+    "size": [ "100%" , "30px" ],
     "controls": [
       {
-        "panel_a@settings_common.panel_a": { "offset": [ 2.5 , 5 ] }
+        "panel_a@settings_common.panel_a": { "offset": [ 3 , 0 ] }
       }
     ]
   },
@@ -1497,7 +1502,7 @@
     "anchor_from": "bottom_left",
     "anchor_to": "bottom_left",
     "offset": [ 0 , 2.5 ],
-    "size": [ "100%" , "35px" ]
+    "size": [ "100%" , "30px" ]
   },
 
   "dialog_content": {
