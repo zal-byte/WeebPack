@@ -230,7 +230,7 @@
     "$arrow_button_focus_override_right|default": "",
     "controls": [
       {
-        "preset_arrow_button@common_buttons.light_content_button": { 
+        "preset_arrow_button@common_buttons.light_content_button": {
           "$focus_id": "$arrow_button_focus_id",
           "$focus_override_left": "$arrow_button_focus_override_left",
           "$focus_override_right": "$arrow_button_focus_override_right",
@@ -1048,7 +1048,34 @@
       }
     ]
   },
-  
+
+  "featured_skins_info_panel": {
+    "type": "panel",
+    "size": [ "50%", "100%sm" ],
+    "$cycle_button_panel_size": [ 15, "100%" ],
+    "$cycle_button_size": [ "100%", "90%" ],
+    "controls": [
+      {
+        // this panel is need for centering the content on the x
+        "featured_skin_info_content_centerer": {
+          "type": "panel",
+          "size": [ "100% - 4px", "100% - 4px" ],
+
+          "controls": [
+            {
+              "featured_skin_info_content@persona.classic_skin_featured_content": {
+                "size": [ "100%", "100%" ],
+                "$featured_skin_grid_panel_size": [ "fill", "100%" ],
+                "$controller_left_bumper_mapping": "button.cycle_featured_skins_left",
+                "$controller_right_bumper_mapping": "button.cycle_featured_skins_right"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
   "featured_info_panel@profile.bottom_dialog_panel": {
     "type": "panel",
     "size": [ "fill", "100%c" ],
@@ -1072,6 +1099,29 @@
     "$featured_skin_pack_button_max_size": [ "33%", "56.25%x" ],
 
     "$featured_grid_dimensions": [ 5, 1 ]
+  },
+
+  "bottom_panel_content": {
+    "type": "stack_panel",
+    "orientation": "horizontal",
+    "size": [ "100%", "100%cm" ],
+    "$right_side_default_text_color": "$dressing_room_right_side_default_text_color",
+    "$right_side_dialog_visible_binding": "#is_featured_panel_visible",
+    "controls": [
+      { "left_padding@profile.sides_padding_panel": {} },
+      {
+        "featured_panel@profile.featured_info_panel": {
+          "focus_container": true,
+          "use_last_focus": false,
+          "focus_wrap_enabled": false,
+          "focus_nagivation_mode_right": "stop",
+          "focus_nagivation_mode_down": "stop",
+          "focus_nagivation_mode_left": "$main_content_focus_container_left",
+          "focus_container_custom_left": "$main_content_focus_container_left_custom"
+        }
+      },
+      { "right_padding@profile.sides_padding_panel": {} }
+    ]
   },
 
   // --------------------------------------------------------------------------------------
@@ -1164,18 +1214,6 @@
         "main_panel@common_store.store_header_with_coins": {
           "$child_control": "profile.profile_screen_main_panel",
           "$back_button_pressed_button_name": "button.try_exiting"
-        }
-      },
-      {
-        "popup_dialog_factory": {
-          "type": "factory",
-          "control_ids": {
-            "no_store_connection": "@common_store.popup_dialog__no_store_connection",
-            "restore_popup": "@common_store.popup_dialog__restore_popup",
-            "restore_failed": "@common_store.popup_dialog__restore_failed",
-            "toast_message": "@profile.popup_toast",
-            "delete_persona": "@profile.popup_dialog__delete_persona"
-          }
         }
       }
     ]
