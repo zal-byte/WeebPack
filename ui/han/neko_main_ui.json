@@ -7,31 +7,51 @@
     "texture": "textures/ui-x/icon-new/exit_icon"
   },
 
+  "image_panel": {
+    "type": "panel",
+    "size": [ "100%" , "30px - 2px"]
+  },
+
   "panel_icon": {
     "type": "panel",
-    "size": [ "111px" , "30px - 2px"]
+    "size": [ "100%" , "30px - 2px"]
   },
 
   "panel_icon_2": {
     "type": "panel",
-    "size": [ "100%" , "32px"]
+    "size": [ "fill" , "100%"]
+  },
+
+  "panel_icon_3": {
+    "type": "panel",
+    "size": [ "100%" , "38px"]
+  },
+
+  "panel_icon_4": {
+    "type": "panel",
+    "size": [ "100%" , "30px"]
   },
   
-  "player_name": {
-    "type": "panel",
-    "size": [ "100%" , 30 ],
-    "anchor_from": "bottom_middle",
-    "anchor_to": "bottom_middle",
-    "offset": [ 5 , -5 ],
+  "player_name@rem.bg_2": {
+    "alpha": 0.50,
+    "size": [ "100%" , 20 ],
+    "max_size": [ "100% - 205px", 30 ],
+    "anchor_from": "bottom_right",
+    "anchor_to": "bottom_right",
+    "offset": [ -5 , -7 ],
     "controls": [
       {
        "stack_panel_0": {
         "type": "stack_panel",
         "orientation": "horizontal",
-        "anchor_from": "center",
-        "anchor_to": "center",
+        "size": [ "100%" , "100%" ],
+        "anchor_from": "left",
+        "anchor_to": "left",
         "controls": [
-          { "panel_icon_1@rem.panel_icon": {"controls": [ { "panel_nama_player@loli.panel_nama_player": {}}]}}
+          { "panel_icon_2@rem.panel_icon_2": {"controls":[{ "icon1@neko_button.achievements_button": {}}]}},
+          { "panel_icon_2@rem.panel_icon_2": {"controls":[{ "icon1@neko_button.store_button": {}}]}},
+          { "panel_icon_2@rem.panel_icon_2": {"controls":[{ "icon1@neko_button.profile_button": {}}]}},
+          { "panel_icon_2@rem.panel_icon_2": {"controls":[{ "icon1@neko_button.settings_button": {}}]}}
           ]
         }
       }
@@ -56,15 +76,15 @@
     "size": [ 110 , "100%" ],
     "anchor_from": "left_middle",
     "anchor_to": "left_middle",
-    "offset": [ 5 , 0 ],
+    "offset": [ 5 , -5 ],
     "controls": [
       {
        "stack_panel_0": {
         "type": "stack_panel",
         "size": [ "100%" , "100%c" ],
         "orientation": "vertical",
-        "anchor_from": "left_middle",
-        "anchor_to": "left_middle",
+        "anchor_from": "bottom_left",
+        "anchor_to": "bottom_left",
         "animation_reset_name": "screen_animation_reset",
         "anims": [
           "@anim_test.screen_exit_animation_push_offset",
@@ -73,11 +93,9 @@
           "@anim_test.screen_entrance_animation_pop_offset"
         ],
         "controls": [
-          { "panel_icon_2@rem.panel_icon_2": {"controls":[{ "icon1@neko_button.play_button": {}}]}},
-          { "panel_icon_2@rem.panel_icon_2": {"controls": [{ "miku": { "type": "stack_panel", "orientation": "horizontal", "size": [ "100%", "100%"], "controls": [ { "icon1@neko_button.store_button": {}}, { "han_uwu": { "type": "panel", "size": [ "30px", "30px" ], "anchor_from": "left_middle", "anchor_to" : "left_middle", "controls": [ { "new_offers_icon@start.new_offers_icon": {}}]}}]}}]}},
-          { "panel_icon_2@rem.panel_icon_2": {"controls":[{ "icon1@neko_button.achievements_button": {}}]}},
-          { "panel_icon_2@rem.panel_icon_2": {"controls":[{ "icon1@neko_button.profile_button": {}}]}},
-          { "panel_icon_2@rem.panel_icon_2": {"controls":[{ "icon1@neko_button.settings_button": {}}]}}
+          { "panel_icon_1@rem.panel_icon": {"controls": [ { "panel_nama_player@loli.panel_nama_player": {}}]}},
+          { "panel_icon_1@rem.panel_icon_4": {"controls": [ { "xbox@rem.xbox": {}}]}},
+          { "panel_icon_2@rem.panel_icon_3": {"controls":[{ "icon1@neko_button.play_button": {}}]}}
           ]
         }
       }
@@ -88,6 +106,66 @@
     "type":  "image",
     "texture": "textures/ui-x/dialog/bg",
     "size": [ "100%" , "100%" ]
+  },
+
+  "xbox@rem.bg_2": {
+    "bindings": [
+      { 
+        "binding_name": "#sign_in_visible",
+        "binding_name_override": "#visible" 
+      }
+    ],
+    "controls": [
+      {
+        "xbox_panel": {
+          "type": "stack_panel",
+          "size": [ "100%" , "100%" ],
+          "orientation" : "horizontal",
+          "anchor_from": "left_middle",
+          "anchor_to": "left_middle",
+          "controls": [
+            {
+              "xbox_icon":{
+                "type": "panel",
+                "anchor_from": "center",
+                "anchor_to": "center",
+                "size": [ "30px" , "100%" ],
+                "controls": [
+                  {
+                    "xbox_icon_0": {
+                      "type": "image",
+                      "layer": 2,
+                      "texture": "textures/ui-x/icon-new/warn",
+                      "size": [ 16 , 16 ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "xbox_label":{
+                "type": "panel",
+                "size": [ "fill" , "100%" ],
+                "controls": [
+                  {
+                    "xbox_label_0": {
+                      "type": "label",
+                      "anchor_from": "middle_left",
+                      "anchor_to": "middle_left",
+                      "layer": 2,
+                      "font_size": "small",
+                      "font_type": "MinecraftTen",
+                      "size": [ "100%" , "default" ],
+                      "text": "Onnichan Belum Login Xbox:("
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
   },
 
     /// Button Profile , Skins , Feedback
