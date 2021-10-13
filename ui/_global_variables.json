@@ -184,8 +184,8 @@
     "$light_border_toggle_hover_color": [ 1.0, 1.0, 1.0 ],
   
     "$dark_border_default_color": [ 0.05, 0.05, 0.10 ],
-    "$dark_border_hover_color": [ 0.10, 0.55, 1.00 ],
-    "$dark_border_pressed_color": [ 1.0, 1.0, 1.0 ],
+    "$dark_border_hover_color": [ 1.0, 1.0, 1.0 ],
+    "$dark_border_pressed_color": [ 0.88, 0.98, 1.00 ],
     "$dark_border_locked_color": [ 0.075, 0.075, 0.075 ],
   
     "$dark_border_toggle_default_color": [ 0.075, 0.075, 0.075 ],
