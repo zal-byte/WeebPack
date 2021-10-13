@@ -26,34 +26,6 @@
           }
         },
         {
-          "glyph_color": {
-            "type": "image",
-            "anchor_from": "$glyph_anchor_from",
-            "anchor_to": "$glyph_anchor_to",
-            "offset": "$glyph_offset",
-            "texture": "$glyph_color_texture",
-            "size": "$glyph_size",
-            "layer": 4,
-            "alpha": "$content_alpha",
-  
-            "$glyph_color_bindings|default": [],
-            "bindings": "$glyph_color_bindings"
-          }
-        },
-        {
-          "progress_loading_bars@progress.progress_loading_bars": {
-            "anchor_from": "left_middle",
-            "anchor_to": "left_middle",
-            "color": "$glyph_color",
-            "offset": [ 5, 0 ],
-            "layer": 5,
-            "size": "$glyph_size",
-            "visible": false,
-            "$glyph_progress_bindings|default": [],
-            "bindings": "$glyph_progress_bindings"
-          }
-        },
-        {
           "tab_button_text": {
             "type": "label",
             "text_alignment": "right",
@@ -112,21 +84,6 @@
           }
         },
         {
-          "glyph_color": {
-            "type": "image",
-            "anchor_from": "$glyph_anchor_from",
-            "anchor_to": "$glyph_anchor_to",
-            "offset": "$glyph_offset",
-            "texture": "$glyph_color_texture",
-            "size": "$glyph_size",
-            "layer": 4,
-            "alpha": "$content_alpha",
-  
-            "$glyph_color_bindings|default": [],
-            "bindings": "$glyph_color_bindings"
-          }
-        },
-        {
           "play_label": {
             "type": "label",
             "text_alignment": "center",
@@ -153,7 +110,7 @@
             "size": [ "97% - 25px", "default" ],
             "max_size": [ "99% - 25px", "10px" ],
             "offset": "$button_label_offset_2",
-            "text": "LOCAL WORLD | SERVER",
+            "text": "$megumin",
             "layer": 3,
             "color": "$text_color"
           }
@@ -192,7 +149,6 @@
       "size": [ "100%" , "100%" ],
       "$button_type_panel": "neko_button.yuki",
       "$glyph_texture": "textures/ui-x/icon-new/play",
-      "$glyph_color_texture": "textures/ui-x/icon-new/play",
       "$default_text_color|default": [ 0.0, 0.0, 0.0 ],
       "$hover_text_color|default": [ 1.0, 1.0, 1.0 ],
       "$pressed_text_color|default": [ 0.36, 0.36, 0.36 ],
@@ -201,12 +157,12 @@
       "$hover_button_texture|default": "textures/ui-x/buttons/play/button_borderless_lighthover",
       "$pressed_button_texture|default": "textures/ui-x/buttons/play/button_borderless_light",
       "$pressed_button_name": "$play_button_target",
-      "$button_text": "menu.play"
+      "$button_text": "menu.play",
+      "$megumin": "LOCAL WORLD | SERVER"
     },
 
    "store_button@neko_button.fxbutton1": {
      "$glyph_texture": "textures/ui-x/icon-new/store_icon",
-     "$glyph_color_texture": "textures/ui-x/icon-new/store_icon",
      "$pressed_button_name": "button.menu_store",
      "$button_text": "menu.store"
     },
@@ -221,21 +177,18 @@
 
     "settings_button@neko_button.fxbutton1": {
       "$glyph_texture": "textures/ui-x/icon-new/settings_icon",
-      "$glyph_color_texture": "textures/ui-x/icon-new/settings_icon",
       "$pressed_button_name": "button.menu_settings",
       "$button_text": "menu.settings"
     },
 
     "exit_button@neko_button.fxbutton1": {
       "$glyph_texture": "textures/ui-x/icon/exit_icon",
-      "$glyph_color_texture": "textures/ui-x/icon/exit_icon",
       "$pressed_button_name": "button.menu_exit",
       "$button_text": "Keluar"
     },
 
     "profile_button@neko_button.fxbutton1": {
       "$glyph_texture": "textures/ui-x/icon-new/profile_icon",
-      "$glyph_color_texture": "textures/ui-x/icon-new/profile_icon",
       "$pressed_button_name": "button.to_profile_screen",
       "$button_text": "profileScreen.header"
     }
