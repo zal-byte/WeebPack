@@ -77,7 +77,7 @@
         "$pressed_button_name": "button.menu_local_world_create"
       }
     ],
-    "$button_type_panel": "neko_button.han_ganteng",
+      "$button_type_panel": "neko_button.yuki",
     "$default_button_texture|default": "textures/ui-x/buttons/play/button_borderless_light",
     "$hover_button_texture|default": "textures/ui-x/buttons/play/button_borderless_lighthover",
     "$pressed_button_texture|default": "textures/ui-x/buttons/play/button_borderless_light",
@@ -85,9 +85,12 @@
     "$hover_text_color|default": [ 1.0, 1.0, 1.0 ],
     "$light_button_pressed_text_color": [ 1.0, 1.0, 1.0 ],
     "$light_button_locked_text_color": [ 0.7, 0.7, 0.7 ],
-    "$glyph_texture": "textures/ui-x/icon-new/play",
-    "$glyph_color_texture": "textures/ui-x/icon-new/play",
+    "$glyph_texture": "textures/ui-x/icon-new/create_new",
+
     "$button_text": "selectWorld.createNew",
+    "$megumin": "WORLD",
+
+
     "size": [ "100%" , "100%" ],
     "$button_focus_precedence": 10,
     "$create_new_row_focus_override_up|default": "close_button",
