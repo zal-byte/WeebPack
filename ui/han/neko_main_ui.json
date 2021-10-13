@@ -109,6 +109,13 @@
     "size": [ "100%" , "100%" ]
   },
 
+  "bg_3": {
+    "type":  "image",
+    "alpha": 0.75,
+    "texture": "textures/ui-x/dialog/event_bg",
+    "size": [ "100%" , "100%" ]
+  },
+
   "xbox@rem.bg_2": {
     "controls": [
       {
@@ -181,6 +188,10 @@
     },
 
     "exit_button@common_buttons.light_content_button": {
+    "$default_state_border_visible": false,
+    "$hover_state_border_visible": false,
+    "$pressed_state_border_visible": false,
+    "$locked_state_border_visible": false,
     "$default_button_texture|default": "",
     "$hover_button_texture|default": "",
     "$pressed_button_texture|default": "",
