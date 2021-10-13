@@ -6526,12 +6526,7 @@
     "offset": [ 0 , -30 ],
     "controls": [
       {
-        "background": {
-          "type": "image",
-          "texture": "textures/ui-x/dialog/bg_play", //  Di Ubah
-          "alpha": 0.60,
-          "$show_close_button": false
-        }
+        "background@rem.bg_2": {}
       },
       {
         "content@$scroll_tab_content": {
@@ -6633,7 +6628,7 @@
     "offset": [ -5 , 0 ],
     "anchor_from": "right_middle",
     "anchor_to": "right_middle",
-    "size": [ "100% - 190px", "87.89% - 30px" ]
+    "size": [ "100% - 175px", "87.89% - 30px" ]
   },
 
   "play_screen_panel@play.common_play_screen_panel": {
