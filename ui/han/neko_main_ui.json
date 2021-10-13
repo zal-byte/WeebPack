@@ -33,7 +33,6 @@
   },
   
   "player_name@rem.bg_2": {
-    "alpha": 0.50,
     "size": [ "100%" , 20 ],
     "max_size": [ "100% - 205px", 30 ],
     "anchor_from": "bottom_right",
@@ -93,8 +92,9 @@
           "@anim_test.screen_entrance_animation_pop_offset"
         ],
         "controls": [
+          { "panel_icon_1@rem.panel_icon_4": {"controls": [ { "xbox@rem.xbox": {}}], "bindings": [{ "binding_name": "#sign_in_visible", "binding_name_override": "#visible" }]}},
+          { "panel": { "type": "panel" , "size": [ "100%" , "8px" ]}},
           { "panel_icon_1@rem.panel_icon": {"controls": [ { "panel_nama_player@loli.panel_nama_player": {}}]}},
-          { "panel_icon_1@rem.panel_icon_4": {"controls": [ { "xbox@rem.xbox": {}}]}},
           { "panel_icon_2@rem.panel_icon_3": {"controls":[{ "icon1@neko_button.play_button": {}}]}}
           ]
         }
@@ -104,17 +104,12 @@
 
   "bg_2": {
     "type":  "image",
+    "alpha": 0.75,
     "texture": "textures/ui-x/dialog/bg",
     "size": [ "100%" , "100%" ]
   },
 
   "xbox@rem.bg_2": {
-    "bindings": [
-      { 
-        "binding_name": "#sign_in_visible",
-        "binding_name_override": "#visible" 
-      }
-    ],
     "controls": [
       {
         "xbox_panel": {
