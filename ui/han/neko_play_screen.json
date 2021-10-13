@@ -102,6 +102,10 @@
   },
 
   "import_world_button@common_buttons.light_content_button": {
+    "$default_state_border_visible": false,
+    "$hover_state_border_visible": false,
+    "$pressed_state_border_visible": false,
+    "$locked_state_border_visible": false,
     "size": [ "100%", "fill" ],
     "$default_button_texture|default": "textures/ui-x/buttons/play/button_borderless_light",
     "$hover_button_texture|default": "textures/ui-x/buttons/play/button_borderless_lighthover",
@@ -195,7 +199,7 @@
                 "panel_content_button@play_ui.panel_content_button": { "controls": [ { "import_world_panel@play_ui.import_world_panel": {}}]}
               },
               { "panel": { "type": "panel" , "size": [ "100%" , "17px" ]}},
-              { "panel_icon_1@rem.panel_icon_4": {"controls": [ { "xbox@rem.xbox": {}}]}},
+              { "panel_icon_1@rem.panel_icon_4": {"controls": [ { "xbox@rem.xbox": {}}], "bindings": [{ "binding_name": "#sign_in_visible", "binding_name_override": "#visible" }]}},
               {
                 "panel_01@play_ui.panel_button": { "controls": [ { "create_new_world_button@play_ui.create_new_world_button": {}}]}
               }
@@ -206,9 +210,8 @@
     },
 
     "stack_tab_3@rem.bg_2": {
-    "alpha": 0.60,
     "size": [ "100%" , 29.9 ], // Kenapa ga 30 aja? Gabut hehe :v
-    "max_size": [ "100% - 190px", 30 ],
+    "max_size": [ "100% - 175px", 30 ],
     "anchor_from": "bottom_right",
     "anchor_to": "bottom_right",
     "offset": [ -5 , -7 ],
