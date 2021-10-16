@@ -28,5 +28,5 @@
     // Build
     "build_title@custom_settings_section.fxn_label": { "text": "Build : " ,"shadow": false },
     "build_number@custom_settings_section.fxn_label": { "font_size":"large", "text": "051" , "shadow": true },
-    "about@custom_settings_section.fxn_label": { "text": "Nirtogen UI ( Rename dari Aqua UI )\nCreated By Farhan(Han)" ,"shadow": false }
+    "about@custom_settings_section.fxn_label": { "text": "Weeb ( Rename dari Aqua UI )\nCreated By Farhan(Han)" ,"shadow": false }
 }
