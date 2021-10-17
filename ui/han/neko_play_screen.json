@@ -1,0 +1,244 @@
+  {
+    "namespace": "play_ui",
+    
+    "panel_tab": {
+    "type": "panel",
+    "size": [ "fill" , "100%" ]
+    },
+    
+    "panel_content_button": {
+    "type": "panel",
+    "size": [ "100%" , "100px" ]
+    },
+
+    "panel_button": {
+    "type": "panel",
+    "size": [ "100%" , "38px" ]
+    },
+    
+    "top_tab@custom_tabs.tab_top": {
+    "size": [ "100%" , "100%" ],
+    "$toggle_tts_enabled_binding_type": "global",
+    "$radio_toggle_group": true,
+    "$toggle_name": "navigation_tab",
+    "$toggle_group_default_selected": "$default_tab",
+    "anchor_to": "top_left",
+    "anchor_from": "top_left",
+    "$toggle_tts_type_priority": 1001,
+    "$toggle_tts_toggle_on_text": "",
+    "$toggle_tts_toggle_off_text": "",
+    "$toggle_tts_index_priority": 1002
+  },
+
+  "world_navigation_tab@play_ui.top_tab": {
+    "$is_left_most_tab": true,
+    "$tab_view_binding_name": "world_navigation_tab_toggle",
+    "$tab_icon": "worlds_icon",
+    "$count_text_name": "#world_item_count",
+    "$tab_text_name": "selectWorld.tab.worlds",
+    "$toggle_group_forced_index": 0,
+    "$tab_content": "play.common_navigation_tab_content"
+  },
+
+  "friends_navigation_tab@play_ui.top_tab": {
+    "$tab_view_binding_name": "friends_navigation_tab_toggle",
+    "$tab_icon": "friends_icon_2",
+    "$tab_icon_2": "friends_icon_1",
+    "$tab_icon_nobounce": "friends_icon_2",
+    "$tab_icon_nobounce_2": "friends_icon_1",
+    "$tab_icon_notification": "invite_icon",
+    "$visibility_binding_override_name": "#friends_tab_show_bouncing",
+    "$visibility_binding_override_name_nobounce": "#friends_tab_show_not_bouncing",
+    "$visibility_binding_override_name_notification": "#friends_tab_show_invites",
+    "$count_text_name": "#friend_world_item_count",
+    "$tab_text_name": "selectWorld.tab.friends",
+    "$toggle_group_forced_index": 1,
+    "$tab_content": "play.friends_navigation_tab_content"
+  },
+
+  "server_navigation_tab@play_ui.top_tab": {
+    "$tab_view_binding_name": "server_navigation_tab_toggle",
+    "$tab_icon": "server_tab_icon",
+    "$count_text_name": "#server_world_item_count",
+    "$tab_text_name": "selectWorld.tab.thirdParty",
+    "$toggle_group_forced_index": 2,
+    "$tab_content": "play.common_navigation_tab_content"
+  },
+
+  
+  "create_new_world_button@neko_button.fxbutton1": {
+    "variables": [
+      {
+        "requires": "($local_world_upload)",
+        "$pressed_button_name": "button.new_world_upload"
+      },
+      {
+        "requires": "(not $local_world_upload)",
+        "$pressed_button_name": "button.menu_local_world_create"
+      }
+    ],
+      "$button_type_panel": "neko_button.yuki",
+    "$default_button_texture|default": "textures/ui-x/buttons/play/button_borderless_light",
+    "$hover_button_texture|default": "textures/ui-x/buttons/play/button_borderless_lighthover",
+    "$pressed_button_texture|default": "textures/ui-x/buttons/play/button_borderless_light",
+    "$default_text_color|default": [ 0.0, 0.0, 0.0 ],
+    "$hover_text_color|default": [ 1.0, 1.0, 1.0 ],
+    "$light_button_pressed_text_color": [ 1.0, 1.0, 1.0 ],
+    "$light_button_locked_text_color": [ 0.7, 0.7, 0.7 ],
+    "$glyph_texture": "textures/ui-x/icon-new/create_new",
+
+    "$button_text": "selectWorld.createNew",
+    "$megumin": "WORLD",
+
+
+    "size": [ "100%" , "100%" ],
+    "$button_focus_precedence": 10,
+    "$create_new_row_focus_override_up|default": "close_button",
+    "$focus_override_up": "$create_new_row_focus_override_up",
+    "layer": 1
+  },
+
+  "import_world_icon": {
+    "type": "image",
+    "size": [ 25, 25 ],
+    "texture": "textures/ui-x/icon-new/import_world"
+  },
+
+  "import_world_button@common_buttons.light_content_button": {
+    "$default_state_border_visible": false,
+    "$hover_state_border_visible": false,
+    "$pressed_state_border_visible": false,
+    "$locked_state_border_visible": false,
+    "size": [ "100%", "fill" ],
+    "$default_button_texture|default": "textures/ui-x/buttons/play/button_borderless_light",
+    "$hover_button_texture|default": "textures/ui-x/buttons/play/button_borderless_lighthover",
+    "$pressed_button_texture|default": "textures/ui-x/buttons/play/button_borderless_light",
+    "$button_content": "play_ui.import_world_icon",
+    "variables": [
+      {
+        "requires": "($local_world_upload)",
+        "$pressed_button_name": "button.archived_world_upload"
+      },
+      {
+        "requires": "(not $local_world_upload)",
+        "$pressed_button_name": "button.menu_import_level"
+      }
+    ]
+  },
+
+  "panel_import": {
+    "type": "panel",
+    "size": [ "100%", "fill" ]
+  },
+
+  "bg_3": {
+    "type": "image",
+    "texture": "textures/ui-x/dialog/han"
+  },
+
+  "import_world_panel@play_ui.bg_3": {
+    "alpha": 0.60,
+    "size": [ "100% - 5px", "100% - 5px" ],
+    "anchor_from": "middle",
+    "anchor_to": "middle",
+    "controls": [
+      {
+        "stack_panel": {
+          "type": "stack_panel",
+          "orientation": "vertical",
+          "anchor_from": "bottom_left",
+          "anchor_to": "bottom_left",
+          "size": [ "100%" , "100%" ],
+          "controls": [
+            {
+              "import_world_button@play_ui.import_world_button": {}
+            },
+            {
+              "label": {
+                "type": "label",
+                "layer": 10,
+                "text_alignment": "center",
+                "color": [ 0.0, 0.0, 0.0 ],
+                "font_type": "MinecraftTen",
+                "size": [ "100%", "20px" ],
+                "text": "IMPORT"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "new_world_icon": {
+    "type": "image",
+    "size": [ 25, 25 ],
+    "texture": "textures/ui-x/icon-new/create_world"
+  },
+
+    "stack_tab_2@rem.bg_2": {
+    "type": "panel",
+    "size": [ 110 , "100%" ],
+    "anchor_from": "left_middle",
+    "anchor_to": "left_middle",
+    "offset": [ 5 , -5 ],
+    "controls": [
+      {
+        "stack_panel_0": {
+        "type": "stack_panel",
+        "size": [ "100%" , "100%c" ],
+        "orientation": "vertical",
+        "anchor_from": "bottom_left",
+        "anchor_to": "bottom_left",
+        "animation_reset_name": "screen_animation_reset",
+        "anims": [
+            "@anim_test.screen_exit_animation_push_offset",
+            "@anim_test.screen_exit_animation_pop_offset",
+            "@anim_test.screen_entrance_animation_push_offset",
+            "@anim_test.screen_entrance_animation_pop_offset"
+          ],
+        "controls": [
+              {
+                "panel_content_button@play_ui.panel_content_button": { "controls": [ { "import_world_panel@play_ui.import_world_panel": {}}]}
+              },
+              { "panel": { "type": "panel" , "size": [ "100%" , "17px" ]}},
+              { "panel_icon_1@rem.panel_icon_4": {"controls": [ { "xbox@rem.xbox": {}}], "bindings": [{ "binding_name": "#sign_in_visible", "binding_name_override": "#visible" }]}},
+              {
+                "panel_01@play_ui.panel_button": { "controls": [ { "create_new_world_button@play_ui.create_new_world_button": {}}]}
+              }
+            ]
+          }
+        }
+      ]
+    },
+
+    "stack_tab_3@rem.bg_2": {
+    "size": [ "100%" , 29.9 ], // Kenapa ga 30 aja? Gabut hehe :v
+    "max_size": [ "100% - 175px", 30 ],
+    "anchor_from": "bottom_right",
+    "anchor_to": "bottom_right",
+    "offset": [ -5 , -7 ],
+    "controls": [
+        {
+          "stack_panel": {
+          "type": "stack_panel",
+          "orientation": "horizontal",
+          "size": [ "100%" , "100%" ],
+          "anchor_from": "left",
+          "anchor_to": "left",
+          "controls": [
+              {
+                "panel_01@play_ui.panel_tab": { "controls": [ { "world_navigation_tab@play_ui.world_navigation_tab": {}}]}
+              },
+              {
+                "panel_01@play_ui.panel_tab": { "controls": [ { "friends_navigation_tab@play_ui.friends_navigation_tab": {}}]}
+              },
+              {
+                "panel_01@play_ui.panel_tab": { "controls": [ { "server_navigation_tab@play_ui.server_navigation_tab": {}}]}
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
