@@ -138,9 +138,9 @@
                       "anchor_from": "middle_left",
                       "anchor_to": "middle_left",
                       "layer": 2,
-                      "font_type": "MinecraftTen",
+                      "font_size": "small",
                       "size": [ "100%" , "default" ],
-                      "text": "Login Xbox ANJG"
+                      "text": "Minecraft kamu belum\nlogin xbox :("
                     }
                   }
                 ]
