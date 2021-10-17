@@ -92,11 +92,11 @@ public class MainActivity extends AppCompatActivity implements  NavigationView.O
                {
                    case 1:
                        //Weebs Edition
-                       url = "https://github.com/Han031/Minecraft-Project/archive/refs/heads/WeebsEdition1.7.5.zip";
+                       url = "https://github.com/Neko059/WeebPack/archive/refs/heads/main.zip";
                        break;
                    case 2:
                        //Hentai edition
-                       url = "s";
+                       Toast.makeText(MainActivity.this, "Unavailable...", Toast.LENGTH_SHORT).show();
                        break;
                    default:
                        break;
@@ -151,7 +151,7 @@ public class MainActivity extends AppCompatActivity implements  NavigationView.O
         switch (id)
         {
             case R.id.aboutme:
-                Toast.makeText(this, "Testing", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "Developer : zal-byte ( github )", Toast.LENGTH_LONG).show();
                 break;
             default:
                 break;
@@ -194,53 +194,88 @@ public class MainActivity extends AppCompatActivity implements  NavigationView.O
         }
     }
 
+    class Unzipper extends AsyncTask<Void, Void, Boolean>
+    {
+        String _zip_file, _output;
+        ProgressDialog prog;
+        public Unzipper(String _zip_file, String _output)
+        {
+            this._zip_file = _zip_file;
+            this._output = _output;
+        }
+        @Override
+        protected void onPreExecute()
+        {
+            super.onPreExecute();
+            prog = new ProgressDialog(MainActivity.this);
+            prog.setTitle("Extracting...");
+            prog.setMessage("Please wait");
+            prog.setCanceledOnTouchOutside(false);
+            prog.setCancelable(false);
+            prog.show();
+        }
+        @Override
+        protected void onPostExecute(Boolean res)
+        {
+            super.onPostExecute(res);
+            prog.dismiss();
+        }
+        @Override
+        protected Boolean doInBackground(Void... voids) {
+
+            checkDir(_output);
+            try {
+                File f = new File(_output);
+                if(!f.isDirectory())
+                {
+                    f.mkdirs();
+                }
+                ZipInputStream zin = new ZipInputStream(new FileInputStream(_zip_file));
+
+                try {
+                    ZipEntry ze = null;
+                    while((ze = zin.getNextEntry()) != null)
+                    {
+                        String paths = _output + File.separator + ze.getName();
+                        System.out.println("ZIPPER_> "+paths);
+                        if(ze.isDirectory())
+                        {
+                            File unzipFile = new File(paths);
+                            if(!unzipFile.isDirectory())
+                            {
+                                unzipFile.mkdirs();
+                            }
+                        }else
+                        {
+                            FileOutputStream fout = new FileOutputStream(paths);
+                            int c = 0;
+                            byte[] buff = new byte[1024];
+                            while((c = zin.read(buff)) != -1)
+                            {
+                                fout.write(buff, 0, c);
+                            }
+                            zin.closeEntry();
+                            fout.close();
+                        }
+                    }
+                }catch(Exception e)
+                {
+                    System.out.println(e.getMessage());
+                }finally {
+                    zin.close();
+                }
+            }catch (Exception e)
+            {
+                System.out.println(e.getMessage());
+            }
+            return null;
+        }
+    }
+
     public void unzip(String _zip_file, String _output)
     {
-        checkDir(_output);
-        try {
-           File f = new File(_output);
-           if(!f.isDirectory())
-           {
-               f.mkdirs();
-           }
-           ZipInputStream zin = new ZipInputStream(new FileInputStream(_zip_file));
-
-           try {
-               ZipEntry ze = null;
-               while((ze = zin.getNextEntry()) != null)
-               {
-                   String paths = _output + File.separator + ze.getName();
-                   System.out.println("ZIPPER_> "+paths);
-                   if(ze.isDirectory())
-                   {
-                       File unzipFile = new File(paths);
-                       if(!unzipFile.isDirectory())
-                       {
-                           unzipFile.mkdirs();
-                       }
-                   }else
-                   {
-                       FileOutputStream fout = new FileOutputStream(paths);
-                       int c = 0;
-                       byte[] buff = new byte[1024];
-                       while((c = zin.read(buff)) != -1)
-                       {
-                         fout.write(buff, 0, c);
-                       }
-                       zin.closeEntry();
-                       fout.close();
-                   }
-               }
-           }catch(Exception e)
-           {
-               System.out.println(e.getMessage());
-           }finally {
-               zin.close();
-           }
-        }catch (Exception e)
-        {
-            System.out.println(e.getMessage());
-        }
+        Unzipper unzipper = new Unzipper(_zip_file, _output);
+        unzipper.execute();
     }
 
 
@@ -257,10 +292,9 @@ public class MainActivity extends AppCompatActivity implements  NavigationView.O
             try {
                 URL u = new URL(strings[0]);
                 HttpURLConnection connection = (HttpURLConnection) u.openConnection();
-                connection.setRequestMethod("GET");
                 connection.connect();
 
-                int fileLength = connection.getContentLength();
+                final int fileLength = connection.getContentLength();
 
                 FileOutputStream fos = new FileOutputStream(new File(path+"file.zip"));
                 InputStream is = new BufferedInputStream(connection.getInputStream());
