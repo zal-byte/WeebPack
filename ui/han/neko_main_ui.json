@@ -7,11 +7,6 @@
     "texture": "textures/ui-x/icon-new/exit_icon"
   },
 
-  "image_panel": {
-    "type": "panel",
-    "size": [ "100%" , "30px - 2px"]
-  },
-
   "panel_icon": {
     "type": "panel",
     "size": [ "100%" , "30px - 2px"]
@@ -24,17 +19,17 @@
 
   "panel_icon_3": {
     "type": "panel",
-    "size": [ "100%" , "38px"]
+    "size": [ "100%" , "34px"]
   },
 
   "panel_icon_4": {
     "type": "panel",
-    "size": [ "100%" , "30px"]
+    "size": [ "100%" , "28px"]
   },
   
   "player_name@rem.bg_2": {
-    "size": [ "100%" , 20 ],
-    "max_size": [ "100% - 205px", 30 ],
+    "size": [ "100% - 200px" , 20 ],
+    "max_size": [ "100% - 205px", 20 ],
     "anchor_from": "bottom_right",
     "anchor_to": "bottom_right",
     "offset": [ -5 , -7 ],
@@ -53,19 +48,6 @@
           { "panel_icon_2@rem.panel_icon_2": {"controls":[{ "icon1@neko_button.settings_button": {}}]}}
           ]
         }
-      }
-    ]
-  },
-
-  "msg_ui@start.new_offers_icon": {
-    "$tag_text": "BETA",
-    "size": [ 35 , "100% - 10px" ],
-    "anchor_from": "left_middle",
-    "anchor_to": "left_middle",
-    "bindings": [
-      {
-       "binding_name": "#new_offers",
-        "binding_name_override": "#visible"
       }
     ]
   },
@@ -93,7 +75,7 @@
         ],
         "controls": [
           { "panel_icon_1@rem.panel_icon_4": {"controls": [ { "xbox@rem.xbox": {}}], "bindings": [{ "binding_name": "#sign_in_visible", "binding_name_override": "#visible" }]}},
-          { "panel": { "type": "panel" , "size": [ "100%" , "8px" ]}},
+          { "panel": { "type": "panel" , "size": [ "100%" , "4px" ]}},
           { "panel_icon_1@rem.panel_icon": {"controls": [ { "panel_nama_player@loli.panel_nama_player": {}}]}},
           { "panel_icon_2@rem.panel_icon_3": {"controls":[{ "icon1@neko_button.play_button": {}}]}}
           ]
@@ -116,7 +98,8 @@
     "size": [ "100%" , "100%" ]
   },
 
-  "xbox@rem.bg_2": {
+  "xbox": {
+    "type": "panel",
     "controls": [
       {
         "xbox_panel": {
@@ -155,10 +138,9 @@
                       "anchor_from": "middle_left",
                       "anchor_to": "middle_left",
                       "layer": 2,
-                      "font_size": "small",
                       "font_type": "MinecraftTen",
                       "size": [ "100%" , "default" ],
-                      "text": "Onnichan Belum Login Xbox:("
+                      "text": "Login Xbox ANJG"
                     }
                   }
                 ]
