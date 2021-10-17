@@ -201,7 +201,7 @@
               "paper_doll": {
                 "type": "custom",
                 "renderer": "paper_doll_renderer",
-                "camera_tilt_degrees": 0,
+                "camera_tilt_degrees": -10,
                 "starting_rotation": 20,
                 "layer": 2,
                 "anchor_from": "bottom_middle",
