@@ -1,0 +1,18 @@
+{
+    "format_version": 2,
+    "header": {
+        "description": "Di buat oleh Farhan:3\nFacebook : Han",
+        "name": "§bWeeb",
+        "uuid": "bc015012-f718-45ad-af32-1f3f54b46144",
+        "version": [1, 2, 5],
+        "min_engine_version": [1, 17, 10]
+    },
+    "modules": [
+        {
+            "description": "Di buat oleh Farhan:3\nFacebook : Han",
+            "type": "resources",
+            "uuid": "76f6bf67-69b3-4459-8214-3de067e013c0",
+            "version": [1, 2, 5]
+        }
+    ]
+}
