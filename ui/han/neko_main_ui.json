@@ -29,10 +29,10 @@
   
   "player_name@rem.bg_2": {
     "size": [ "100% - 200px" , 20 ],
-    "max_size": [ "100% - 205px", 20 ],
+    "max_size": [ "100% - 220px", 20 ],
     "anchor_from": "bottom_right",
     "anchor_to": "bottom_right",
-    "offset": [ -5 , -7 ],
+    "offset": [ -5 , -6 ],
     "controls": [
       {
        "stack_panel_0": {
@@ -54,7 +54,7 @@
 
   "button_dan_icon": {
     "type": "panel",
-    "size": [ 110 , "100%" ],
+    "size": [ 100 , "100%" ],
     "anchor_from": "left_middle",
     "anchor_to": "left_middle",
     "offset": [ 5 , -5 ],
