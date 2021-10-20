@@ -6625,7 +6625,7 @@
 
   "common_play_screen_panel": { // Di Ubah
     "type": "panel",
-    "offset": [ -5 , 0 ],
+    "offset": [ -12 , 0 ],
     "anchor_from": "right_middle",
     "anchor_to": "right_middle",
     "size": [ "100% - 175px", "87.89% - 30px" ]
