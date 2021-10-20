@@ -79,8 +79,8 @@
 
   "selector_stack_panel": {
     "type": "stack_panel",
-    "anchor_from": "top_left",
-    "anchor_to": "top_left",
+    "anchor_from": "middle",
+    "anchor_to": "middle",
     "orientation": "vertical",
     "$default_selector_toggle_index": 0,
     "ttsSectionContainer": true,
