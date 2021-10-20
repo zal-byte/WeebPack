@@ -121,9 +121,9 @@
 
 
     "fxbutton1@common_buttons.light_text_button": {
-      "$default_button_texture|default": "",
-      "$hover_button_texture|default": "",
-      "$pressed_button_texture|default": "",
+      "$default_button_texture|default": "textures/ui-x/buttons/borderless/light",
+      "$hover_button_texture|default": "textures/ui-x/buttons/borderless/lighthover",
+      "$pressed_button_texture|default": "textures/ui-x/buttons/borderless/lightpressed",
       "$button_type_panel": "neko_button.toggle_button_control",
       "anchor_from": "top_left",
       "anchor_to": "top_left",
