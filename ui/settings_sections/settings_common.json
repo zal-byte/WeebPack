@@ -1292,94 +1292,89 @@
 
   "toggle_button_control": {
     "type": "panel",
-    "$glyph_offset|default": [ 1, 0 ],
-    "$glyph_anchor_from|default": "left_middle",
-    "$glyph_anchor_to|default": "left_middle",
-    "$button_label_offset|default": [ 15, 0 ],
+    "$glyph_offset|default": [ 0, -5 ],
+    "$glyph_anchor_from|default": "middle",
+    "$glyph_anchor_to|default": "middle",
+    "$button_label_offset|default": [ 0, -1 ],
     "layer": 2,
     "controls": [
-      {
-        "glyph": {
-          "type": "image",
-          "anchor_from": "$glyph_anchor_from",
-          "anchor_to": "$glyph_anchor_to",
-          "offset": "$glyph_offset",
-          "texture": "$glyph_texture",
-          "size": "$glyph_size",
-          "layer": 3,
-          "color": "$glyph_color",
-          "alpha": "$content_alpha",
-
-          "$glyph_bindings|default": [],
-          "bindings": "$glyph_bindings"
-        }
-      },
-      {
-        "glyph_color": {
-          "type": "image",
-          "anchor_from": "$glyph_anchor_from",
-          "anchor_to": "$glyph_anchor_to",
-          "offset": "$glyph_offset",
-          "texture": "$glyph_color_texture",
-          "size": "$glyph_size",
-          "layer": 4,
-          "alpha": "$content_alpha",
-
-          "$glyph_color_bindings|default": [],
-          "bindings": "$glyph_color_bindings"
-        }
-      },
-      {
-        "progress_loading_bars@progress.progress_loading_bars": {
-          "anchor_from": "left_middle",
-          "anchor_to": "left_middle",
-          "color": "$glyph_color",
-          "offset": [ 5, 0 ],
-          "layer": 5,
-          "size": "$glyph_size",
-          "visible": false,
-          "$glyph_progress_bindings|default": [],
-          "bindings": "$glyph_progress_bindings"
-        }
-      },
-      {
-        "tab_button_text": {
-          "type": "label",
-          "font_type": "MinecraftTen",
-          "anchor_from": "middle_left",
-          "anchor_to": "middle_left",
-          "size": [ "100% - 38px", "default" ],
-          "max_size": [ "100% - 38px", "100% - 4px" ],
-          "offset": "$button_label_offset",
-          "text": "$button_text",
-          "layer": 3,
-          "color": "$text_color",
-          "alpha": "$content_alpha",
-          "text_alignment": "left",
-          "$button_text_binding_type|default": "none",
-          "$button_text_grid_collection_name|default": "",
-          "$button_text_binding_condition|default": "none",
-
-          "bindings": [
             {
-              "binding_type": "$button_text_binding_type",
-              "binding_condition": "$button_text_binding_condition",
-              "binding_collection_name": "$button_text_grid_collection_name",
-              "binding_name": "$button_text",
-              "binding_name_override": "$button_text"
+              "glyph": {
+                "type": "image",
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "texture": "$glyph_texture",
+                "size": [ "100%" , "100% - 20px"],
+                "layer": 7,
+                "color": "$glyph_color",
+                "alpha": "$content_alpha",
+                "$glyph_bindings|default": [],
+                "bindings": "$glyph_bindings"
+              }
+            },
+            {
+              "glyph_color": {
+                "type": "image",
+                "anchor_from": "top_left",
+                "anchor_to": "top_left",
+                "texture": "$glyph_color_texture",
+                "size": [ "100%" , "100% - 20px"],
+                "layer": 8,
+                "alpha": "$content_alpha",
+                "$glyph_color_bindings|default": [],
+                "bindings": "$glyph_color_bindings"
+              }
+            },
+            {
+              "progress_loading_bars@progress.progress_loading_bars": {
+                "anchor_from": "left_middle",
+                "anchor_to": "left_middle",
+                "color": "$glyph_color",
+                "offset": [ 5, 0 ],
+                "layer": 5,
+                "size": [ "100%" , "100% - 20px"],
+                "visible": false,
+                "$glyph_progress_bindings|default": [],
+                "bindings": "$glyph_progress_bindings"
+              }
+            },
+            {
+              "tab_button_text": {
+                "type": "label",
+                "anchor_from": "bottom_left",
+                "anchor_to": "bottom_left",
+                "font_type": "MinecraftTen",
+                "size": [ "100%", "20px" ],
+                "offset": "$button_label_offset",
+                "text": "$button_text",
+                "layer": 3,
+                "color": [ 1.0, 1.0, 1.0 ],
+                "alpha": "$content_alpha",
+                "text_alignment": "center",
+                "$button_text_binding_type|default": "none",
+                "$button_text_grid_collection_name|default": "",
+                "$button_text_binding_condition|default": "none",
+      
+                "bindings": [
+                  {
+                    "binding_type": "$button_text_binding_type",
+                    "binding_condition": "$button_text_binding_condition",
+                    "binding_collection_name": "$button_text_grid_collection_name",
+                    "binding_name": "$button_text",
+                    "binding_name_override": "$button_text"
+                  }
+                ]
+              }
             }
           ]
-        }
-      }
-    ]
   },
 
   "section_toggle_base@common_toggles.light_ui_toggle": {
     "anchor_from": "top_left",
+    "anchor_to": "top_left",
     "$default_border_visible": false,
     "$hover_border_visible": false,
-    "anchor_to": "top_left",
-    "size": [ "100%", "30px" ],
+    "size": [ "100% - 5px", "75px - 5px" ],
     "$button_size_override": [ "100%", "100% + 1px" ],
     "$button_type_panel": "settings_common.toggle_button_control",
 
@@ -1411,7 +1406,8 @@
   // upper right title
   "section_title_label@settings_common.han_a": {
     "offset": [ 5 , 1 ],
-    "color": [ 0.10, 0.84, 1.00 ],
+    "font_size": "small",
+    "color": [ 0.88, 0.98, 1.00 ],
     "text": "#section_title",
     "bindings": [
       {
@@ -1434,18 +1430,12 @@
   "dialog_titles": {
     "type": "stack_panel",
     "orientation": "vertical",
-    "anchor_from": "middle_left",
-    "anchor_to": "middle_left",
-    "size": [ "100%", 35 ],
+    "anchor_from": "left_middle",
+    "anchor_to": "left_middle",
+    "size": [ "100%", 23 ],
     "controls": [
       {
         "dialog_title_label@settings_common.dialog_title_label": {
-          "size": [ "default", "default" ]
-        }
-      },
-      { "spaces": {"type": "panel", "size": [ 1, 1 ]}},
-      {
-        "section_title_label@settings_common.section_title_label": {
           "size": [ "default", "default" ]
         }
       }
@@ -1469,10 +1459,6 @@
     "size": [ "23px" , "100%" ]
   },
 
-  "button_panel_b": {
-    "type": "panel",
-    "size": [ "120px" , "100%" ]
-  },
 
   "panel_a": {
     "type": "stack_panel",
@@ -1487,22 +1473,15 @@
   },
 
   "panel_b@rem.bg_2": {
-    "anchor_from": "top_left",
-    "anchor_to": "top_left",
-    "offset": [ 0 , -2.5 ],
-    "size": [ "100%" , "30px" ],
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle",
+    "offset": [ 0 , 2 ],
+    "size": [ "100% - 11px" , "30px" ],
     "controls": [
       {
-        "panel_a@settings_common.panel_a": { "offset": [ 3 , 0 ] }
+        "panel_a@settings_common.panel_a": { "offset": [ 4 , 0 ] }
       }
     ]
-  },
-
-  "panel_c@rem.bg_2": {
-    "anchor_from": "bottom_left",
-    "anchor_to": "bottom_left",
-    "offset": [ 0 , 2.5 ],
-    "size": [ "100%" , "30px" ]
   },
 
   "dialog_content": {
@@ -1512,8 +1491,7 @@
     "controls": [
       { "panel_b@settings_common.panel_b": {}},
       { "selector_area@settings_common.selector_area": {} },
-      { "content_area@settings_common.content_area": {} },
-      { "panel_c@settings_common.panel_c": {}}
+      { "content_area@settings_common.content_area": {} }
     ]
   },
 
@@ -1551,12 +1529,11 @@
   },
 
   // left side
-  "selector_area": {
-    "type": "panel",
-    "offset": [ 2, "37px" ],
-    "size": [ "30% - 3px", "90% - 43px" ],
-    "anchor_from": "top_left",
-    "anchor_to": "top_left",
+  "selector_area@rem.bg_2": {
+    "offset": [ 2, -5 ],
+    "size": [ "130px", "100% - 40px" ],
+    "anchor_from": "bottom_left",
+    "anchor_to": "bottom_left",
     "layer": 2,
     "focus_container": true,
     "use_last_focus": true,
@@ -1573,7 +1550,7 @@
         "scrolling_panel@common.scrolling_panel": {
           "$scrolling_content": "settings_common.scrollable_selector_area_content",
           "$show_background": false,
-          "$scroll_size": [ "5px", "100% - 4px" ],
+          "$scroll_size": [ "1.5px", "100% - 4px" ],
           "$scroll_bar_left_padding_size": [ 1, 0 ]
         }
       }
@@ -1581,12 +1558,12 @@
   },
 
   // right side
-  "content_area": {
-    "type": "panel",
-    "offset": [ "-5px", "37px" ],
-    "size": [ "70% - 8px", "90% - 43px" ],
-    "anchor_from": "top_right",
-    "anchor_to": "top_right",
+  "content_area@rem.bg_2": {
+    "alpha": 0.60,
+    "offset": [ "-5px", -5 ],
+    "size": [ "100% - 140px", "100% - 40px" ],
+    "anchor_from": "bottom_right",
+    "anchor_to": "bottom_right",
     "layer": 1,
 
     "focus_container": true,
@@ -1625,10 +1602,10 @@
             },
             {
               "scrolling_panel@common.scrolling_panel": {
-                "size": [ "100%", "fill" ],
+                "size": [ "100% - 5px", "fill" ],
                 "$scrolling_content": "$section_content_panels",
                 "$show_background": false,
-                "$scroll_size": [ "5px", "100% - 4px" ],
+                "$scroll_size": [ "1.5px", "100% - 4px" ],
                 "$scroll_bar_left_padding_size": [ 1, 0 ]
               }
             },
