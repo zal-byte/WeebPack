@@ -98,9 +98,9 @@
     "$hover_state_border_visible": false,
     "$pressed_state_border_visible": false,
     "$locked_state_border_visible": false,
-    "$default_button_texture|default": "textures/ui-x/buttons/play/button_borderless_light",
-    "$hover_button_texture|default": "textures/ui-x/buttons/play/button_borderless_lighthover",
-    "$pressed_button_texture|default": "textures/ui-x/buttons/play/button_borderless_light",
+    "$default_button_texture|default": "textures/ui-x/buttons/play/light",
+    "$hover_button_texture|default": "textures/ui-x/buttons/play/lighthover",
+    "$pressed_button_texture|default": "textures/ui-x/buttons/play/lighthover",
     "$button_content": "play_ui.create_world_icon",
     "size": [ "100%", "fill" ],
     "$button_focus_precedence": 10,
@@ -115,9 +115,9 @@
     "$pressed_state_border_visible": false,
     "$locked_state_border_visible": false,
     "size": [ "100%", "fill" ],
-    "$default_button_texture|default": "textures/ui-x/buttons/play/button_borderless_light",
-    "$hover_button_texture|default": "textures/ui-x/buttons/play/button_borderless_lighthover",
-    "$pressed_button_texture|default": "textures/ui-x/buttons/play/button_borderless_light",
+    "$default_button_texture|default": "textures/ui-x/buttons/play/light",
+    "$hover_button_texture|default": "textures/ui-x/buttons/play/lighthover",
+    "$pressed_button_texture|default": "textures/ui-x/buttons/play/lighthover",
     "$button_content": "play_ui.import_world_icon",
     "variables": [
       {
@@ -137,9 +137,9 @@
     "$pressed_state_border_visible": false,
     "$locked_state_border_visible": false,
     "size": [ "100%", "fill" ],
-    "$default_button_texture|default": "textures/ui-x/buttons/play/button_borderless_light",
-    "$hover_button_texture|default": "textures/ui-x/buttons/play/button_borderless_lighthover",
-    "$pressed_button_texture|default": "textures/ui-x/buttons/play/button_borderless_light",
+    "$default_button_texture|default": "textures/ui-x/buttons/play/light",
+    "$hover_button_texture|default": "textures/ui-x/buttons/play/lighthover",
+    "$pressed_button_texture|default": "textures/ui-x/buttons/play/lighthover",
     "$button_content": "play_ui.create_server_icon"
   },
 
@@ -175,7 +175,7 @@
                 "type": "label",
                 "layer": 10,
                 "text_alignment": "center",
-                "color": [ 0.0, 0.0, 0.0 ],
+                "color": [ 1.0, 1.0, 1.0 ],
                 "font_type": "MinecraftTen",
                 "size": [ "100%", "20px" ],
                 "text": "IMPORT"
@@ -209,7 +209,7 @@
                 "type": "label",
                 "layer": 10,
                 "text_alignment": "center",
-                "color": [ 0.0, 0.0, 0.0 ],
+                "color": [ 1.0, 1.0, 1.0 ],
                 "font_type": "MinecraftTen",
                 "size": [ "100%", "20px" ],
                 "text": "Add Server"
@@ -243,7 +243,7 @@
                 "type": "label",
                 "layer": 10,
                 "text_alignment": "center",
-                "color": [ 0.0, 0.0, 0.0 ],
+                "color": [ 1.0, 1.0, 1.0 ],
                 "font_type": "MinecraftTen",
                 "size": [ "100%", "20px" ],
                 "text": "Create World"
@@ -257,7 +257,7 @@
 
   "new_world_icon": {
     "type": "image",
-    "size": [ 25, 25 ],
+    "size": [ 35, 35 ],
     "texture": "textures/ui-x/icon-new/create_world"
   },
 
