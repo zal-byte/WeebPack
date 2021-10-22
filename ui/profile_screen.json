@@ -1101,28 +1101,6 @@
     "$featured_grid_dimensions": [ 5, 1 ]
   },
 
-  "bottom_panel_content": {
-    "type": "stack_panel",
-    "orientation": "horizontal",
-    "size": [ "100%", "100%cm" ],
-    "$right_side_default_text_color": "$dressing_room_right_side_default_text_color",
-    "$right_side_dialog_visible_binding": "#is_featured_panel_visible",
-    "controls": [
-      { "left_padding@profile.sides_padding_panel": {} },
-      {
-        "featured_panel@profile.featured_info_panel": {
-          "focus_container": true,
-          "use_last_focus": false,
-          "focus_wrap_enabled": false,
-          "focus_nagivation_mode_right": "stop",
-          "focus_nagivation_mode_down": "stop",
-          "focus_nagivation_mode_left": "$main_content_focus_container_left",
-          "focus_container_custom_left": "$main_content_focus_container_left_custom"
-        }
-      },
-      { "right_padding@profile.sides_padding_panel": {} }
-    ]
-  },
 
   // --------------------------------------------------------------------------------------
   // screen controls
@@ -1149,6 +1127,7 @@
             },
             {
               "mid_padding@profile.vertical_fill_padding": {
+                "size": [ "100%", "20%" ],
                 "bindings": [
                   {
                     "binding_name": "(not #is_using_dressing_room_debugging)",
@@ -1165,14 +1144,6 @@
                 "focus_nagivation_mode_right": "stop",
                 "focus_nagivation_mode_left": "$main_content_focus_container_left",
                 "focus_container_custom_left": "$main_content_focus_container_left_custom"
-              }
-            },
-            { "featured_section@profile.bottom_panel_framework": {} },
-            {
-              "featured_section_disabled_padding": {
-                "ignored": "(not $store_disabled)",
-                "type": "panel",
-                "size": [ "100%", 70 ]
               }
             }
           ]
@@ -1203,7 +1174,7 @@
   "profile_screen_background_content": {
     "type": "image",
     "fill": true,
-    "texture": "textures/ui/profile_bg"
+    "texture": ""
   },
 
   "profile_screen_content": {
