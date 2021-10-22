@@ -15,7 +15,7 @@
     "$toggle_view_binding_name": "graphic_button_toggle",
     "$glyph_texture": "textures/ui-x/glyph/settings_grafis",
     "$glyph_color_texture": "textures/ui-x/glyph/settings_grafis",
-    "$glyph_size": [ 40, 40],
+    "$glyph_size": [ 23, 23],
     "$button_text": "neko.graphics",
     "$toggle_property_bag": {
       "#panel_title": "neko.title_graphics"
@@ -245,7 +245,7 @@
     "$toggle_view_binding_name": "gameplay_button_toggle",
     "$glyph_texture": "textures/ui-x/glyph/controller_glyph_color",
     "$glyph_color_texture": "textures/ui-x/glyph/controller_glyph_color",
-    "$glyph_size": [ 40, 40],
+    "$glyph_size": [ 23, 23],
     "$button_text": "neko.gameplay",
     "$toggle_property_bag": {
       "#panel_title": "neko.title_gameplay"
@@ -545,7 +545,7 @@
     "$toggle_view_binding_name": "about_button_toggle",
     "$glyph_texture": "textures/ui-x/glyph/settings_about",
     "$glyph_color_texture": "textures/ui-x/glyph/settings_about",
-    "$glyph_size": [ 40, 40],
+    "$glyph_size": [ 23, 23],
     "$button_text": "neko.about",
     "$toggle_property_bag": {
       "#panel_title": "neko.title_about"
