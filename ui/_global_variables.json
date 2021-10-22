@@ -7,10 +7,10 @@
     "$light_button_pressed_text_color": [ 0.36, 0.36, 0.36 ],
     "$light_button_locked_text_color": [ 0.7, 0.7, 0.7 ],
   
-    "$light_toggle_default_text_color": [ 1.0, 1.0, 1.0 ],
-    "$light_toggle_hover_text_color": [ 0.00, 0.82, 1.00 ],
-    "$light_toggle_checked_default_text_color": [ 0.31, 0.88, 1.00 ],
-    "$light_toggle_checked_hover_text_color": [ 0.00, 0.93, 0.84 ],
+    "$light_toggle_default_text_color": [ 0.0, 0.0, 0.0 ],
+    "$light_toggle_hover_text_color": [ 0.10, 0.55, 1.00 ],
+    "$light_toggle_checked_default_text_color": [ 0.17, 0.19, 0.25 ],
+    "$light_toggle_checked_hover_text_color": [ 0.17, 0.19, 0.25 ],
   
     "$dark_button_default_text_color": [ 1.0, 1.0, 1.0 ],
     "$dark_button_hover_text_color": [ 0.10, 0.55, 1.00 ],
