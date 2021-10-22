@@ -28,8 +28,7 @@
   },
   
   "player_name@rem.bg_2": {
-    "size": [ "100% - 200px" , 20 ],
-    "max_size": [ "100% - 220px", 20 ],
+    "size": [ "250px" , 20 ],
     "anchor_from": "bottom_right",
     "anchor_to": "bottom_right",
     "offset": [ -5 , -6 ],
@@ -39,8 +38,8 @@
         "type": "stack_panel",
         "orientation": "horizontal",
         "size": [ "100%" , "100%" ],
-        "anchor_from": "left",
-        "anchor_to": "left",
+        "anchor_from": "center",
+        "anchor_to": "center",
         "controls": [
           { "panel_icon_2@rem.panel_icon_2": {"controls":[{ "icon1@neko_button.achievements_button": {}}]}},
           { "panel_icon_2@rem.panel_icon_2": {"controls":[{ "icon1@neko_button.store_button": {}}]}},
@@ -226,9 +225,16 @@
     ]
   },
 
+  "bg": {
+    "type": "image",
+    "fill": true,
+    "texture": "textures/ui-x/gradient"
+  },
+
   "button_panel": {
   "type": "panel",
   "controls": [      
+        { "bg@rem.bg": {}},
         { "version_panel@loli.version_panel": {}},
         { "skin_panel@rem.skin_panel": {}},
         { "button_panel_1@rem.button_panel_1": {}},
