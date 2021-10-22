@@ -158,7 +158,7 @@
       "$pressed_button_texture|default": "textures/ui-x/buttons/play/button_borderless_light",
       "$pressed_button_name": "$play_button_target",
       "$button_text": "menu.play",
-      "$megumin": "LOCAL WORLD | SERVER"
+      "$megumin": "Offline|Online"
     },
 
    "store_button@neko_button.fxbutton1": {
