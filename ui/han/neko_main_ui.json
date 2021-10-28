@@ -24,7 +24,7 @@
 
   "panel_icon_4": {
     "type": "panel",
-    "size": [ "100%" , "24px"]
+    "size": [ "100%" , "28px"]
   },
 
   "button_dan_icon": {
@@ -141,13 +141,9 @@
     },
 
     "exit_button@common_buttons.light_content_button": {
-    "$default_state_border_visible": false,
-    "$hover_state_border_visible": false,
-    "$pressed_state_border_visible": false,
-    "$locked_state_border_visible": false,
-    "$default_button_texture|default": "",
-    "$hover_button_texture|default": "",
-    "$pressed_button_texture|default": "",
+    "$default_button_texture|default": "textures/ui-x/buttons/content/light",
+    "$hover_button_texture|default": "textures/ui-x/buttons/content/lighthover",
+    "$pressed_button_texture|default": "textures/ui-x/buttons/content/lightpressed",
 		"$button_content": "rem.exit_icon",
     "$pressed_button_name": "button.menu_exit",
     "size": [ 24 , 24 ],
@@ -162,16 +158,16 @@
 
     "button_panel_1": {
       "type": "panel",
-      "anchor_from": "top_left",
-      "anchor_to": "top_left",
+      "anchor_from": "top_right",
+      "anchor_to": "top_right",
       "size": [ "100%" , 24 ],
-      "offset": [ 5 , 5 ],
+      "offset": [ -5 , 5 ],
       "controls": [
         {
           "stack_button_panel_1": {
             "type" : "stack_panel",
-            "anchor_from": "top_left",
-            "anchor_to": "top_left",
+            "anchor_from": "top_right",
+            "anchor_to": "top_right",
             "orientation": "horizontal",
             "controls": [
               {
