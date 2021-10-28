@@ -3,10 +3,10 @@
 
     "toggle_button_control": {
       "type": "panel",
-      "$glyph_offset|default": [ -2, 0 ],
-      "$glyph_anchor_from|default": "right_middle",
-      "$glyph_anchor_to|default": "right_middle",
-      "$button_label_offset|default": [ -10, -1 ],
+      "$glyph_offset|default": [ 2, 0 ],
+      "$glyph_anchor_from|default": "left_middle",
+      "$glyph_anchor_to|default": "left_middle",
+      "$button_label_offset|default": [ 20, 0 ],
       "layer": 2,
       "controls": [
         {
@@ -28,12 +28,11 @@
         {
           "tab_button_text": {
             "type": "label",
-            "text_alignment": "right",
-            "font_type": "MinecraftTen", //default "OldSmoothFont",
-            "anchor_from": "middle",
-            "anchor_to": "middle",
-            "size": [ "default", "default" ],
-            "max_size": [ "99% - 15px", "10px" ],
+            "font_type": "MinecraftTen",
+            "anchor_from": "left_middle",
+            "anchor_to": "left_middle",
+            "size": [ "100% - 15px", "default" ],
+            "max_size": [ "100% - 15px", "100% - 4px" ],
             "offset": "$button_label_offset",
             "text": "$button_text",
             "layer": 3,
@@ -63,8 +62,8 @@
       "$glyph_offset|default": [ 1, 0 ],
       "$glyph_anchor_from|default": "left_middle",
       "$glyph_anchor_to|default": "left_middle",
-      "$button_label_offset|default": [ 0, -5 ],
-      "$button_label_offset_2|default": [ 0, 5 ],
+      "$button_label_offset|default": [ 20, -5 ],
+      "$button_label_offset_2|default": [ 20, 5 ],
       "layer": 2,
       "controls": [
         {
@@ -86,10 +85,10 @@
         {
           "play_label": {
             "type": "label",
-            "text_alignment": "center",
+            "text_alignment": "left",
             "font_type": "MinecraftTen", //default "OldSmoothFont",
-            "anchor_from": "middle",
-            "anchor_to": "middle",
+            "anchor_from": "left_middle",
+            "anchor_to": "left_middle",
             "size": [ "97% - 25px", "default" ],
             "max_size": [ "99% - 25px", "10px" ],
             "offset": "$button_label_offset",
@@ -102,11 +101,11 @@
         {
           "minecraft_version_label": {
             "type": "label",
-            "text_alignment": "center",
+            "text_alignment": "left",
             "font_size": "small",
             "font_type": "MinecraftTen",
-            "anchor_from": "middle",
-            "anchor_to": "middle",
+            "anchor_from": "left_middle",
+            "anchor_to": "left_middle",
             "size": [ "97% - 25px", "default" ],
             "max_size": [ "99% - 25px", "10px" ],
             "offset": "$button_label_offset_2",
