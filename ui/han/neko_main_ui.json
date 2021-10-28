@@ -24,47 +24,23 @@
 
   "panel_icon_4": {
     "type": "panel",
-    "size": [ "100%" , "28px"]
-  },
-  
-  "player_name@rem.bg_2": {
-    "size": [ "250px" , 20 ],
-    "anchor_from": "bottom_right",
-    "anchor_to": "bottom_right",
-    "offset": [ -5 , -6 ],
-    "controls": [
-      {
-       "stack_panel_0": {
-        "type": "stack_panel",
-        "orientation": "horizontal",
-        "size": [ "100%" , "100%" ],
-        "anchor_from": "center",
-        "anchor_to": "center",
-        "controls": [
-          { "panel_icon_2@rem.panel_icon_2": {"controls":[{ "icon1@neko_button.achievements_button": {}}]}},
-          { "panel_icon_2@rem.panel_icon_2": {"controls":[{ "icon1@neko_button.store_button": {}}]}},
-          { "panel_icon_2@rem.panel_icon_2": {"controls":[{ "icon1@neko_button.profile_button": {}}]}},
-          { "panel_icon_2@rem.panel_icon_2": {"controls":[{ "icon1@neko_button.settings_button": {}}]}}
-          ]
-        }
-      }
-    ]
+    "size": [ "100%" , "24px"]
   },
 
   "button_dan_icon": {
     "type": "panel",
-    "size": [ 100 , "100%" ],
+    "size": [ 100 , "100% - 5px" ],
     "anchor_from": "left_middle",
     "anchor_to": "left_middle",
-    "offset": [ 5 , -5 ],
+    "offset": [ 5 , 0 ],
     "controls": [
       {
        "stack_panel_0": {
         "type": "stack_panel",
         "size": [ "100%" , "100%c" ],
         "orientation": "vertical",
-        "anchor_from": "bottom_left",
-        "anchor_to": "bottom_left",
+        "anchor_from": "left_middle",
+        "anchor_to": "left_middle",
         "animation_reset_name": "screen_animation_reset",
         "anims": [
           "@anim_test.screen_exit_animation_push_offset",
@@ -73,10 +49,13 @@
           "@anim_test.screen_entrance_animation_pop_offset"
         ],
         "controls": [
-          { "panel_icon_1@rem.panel_icon_4": {"controls": [ { "xbox@rem.xbox": {}}], "bindings": [{ "binding_name": "#sign_in_visible", "binding_name_override": "#visible" }]}},
-          { "panel": { "type": "panel" , "size": [ "100%" , "4px" ]}},
-          { "panel_icon_1@rem.panel_icon": {"controls": [ { "panel_nama_player@loli.panel_nama_player": {}}]}},
-          { "panel_icon_2@rem.panel_icon_3": {"controls":[{ "icon1@neko_button.play_button": {}}]}}
+          { "panel_icon_6@rem.panel_icon": {"controls": [ { "panel_nama_player@loli.panel_nama_player": {}}]}},
+          { "panel_icon_5@rem.panel_icon_3": {"controls": [ { "xbox@rem.xbox": {}}], "bindings": [{ "binding_name": "#sign_in_visible", "binding_name_override": "#visible" }]}},
+          { "panel_icon_7@rem.panel_icon_3": {"controls":[{ "icon1@neko_button.play_button": {}}]}},
+          { "panel_icon_1@rem.panel_icon_4": {"controls":[{ "icon1@neko_button.achievements_button": {}}]}},
+          { "panel_icon_2@rem.panel_icon_4": {"controls":[{ "icon1@neko_button.store_button": {}}]}},
+          { "panel_icon_3@rem.panel_icon_4": {"controls":[{ "icon1@neko_button.profile_button": {}}]}},
+          { "panel_icon_4@rem.panel_icon_4": {"controls":[{ "icon1@neko_button.settings_button": {}}]}}
           ]
         }
       }
@@ -87,13 +66,6 @@
     "type":  "image",
     "alpha": 0.75,
     "texture": "textures/ui-x/dialog/bg",
-    "size": [ "100%" , "100%" ]
-  },
-
-  "bg_3": {
-    "type":  "image",
-    "alpha": 0.75,
-    "texture": "textures/ui-x/dialog/event_bg",
     "size": [ "100%" , "100%" ]
   },
 
@@ -190,23 +162,23 @@
 
     "button_panel_1": {
       "type": "panel",
-      "anchor_from": "top_right",
-      "anchor_to": "top_right",
+      "anchor_from": "top_left",
+      "anchor_to": "top_left",
       "size": [ "100%" , 24 ],
-      "offset": [ -5 , 5 ],
+      "offset": [ 5 , 5 ],
       "controls": [
         {
           "stack_button_panel_1": {
             "type" : "stack_panel",
-            "anchor_from": "top_right",
-            "anchor_to": "top_right",
+            "anchor_from": "top_left",
+            "anchor_to": "top_left",
             "orientation": "horizontal",
             "controls": [
               {
-                "stacked_row_0@rem.stacked_row_0": { "controls": [{ "feedback_button@rem.feedback_button": { "ignored": "$feedback_ignored", "bindings": [ {"binding_name": "#feedback_visible","binding_name_override": "#visible"}]}}]}
+                "stacked_row_0@rem.stacked_row_0": { "controls": [{ "exit_button@rem.exit_button": {}}]}
               },
               {
-                "stacked_row_0@rem.stacked_row_0": { "controls": [{ "exit_button@rem.exit_button": {}}]}
+                "stacked_row_0@rem.stacked_row_0": { "controls": [{ "feedback_button@rem.feedback_button": { "ignored": "$feedback_ignored", "bindings": [ {"binding_name": "#feedback_visible","binding_name_override": "#visible"}]}}]}
               }
             ]
           }
