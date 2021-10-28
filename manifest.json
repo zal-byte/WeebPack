@@ -14,5 +14,17 @@
             "uuid": "76f6bf67-69b3-4459-8214-3de067e013c0",
             "version": [1, 2, 5]
         }
-    ]
+    ],
+       "subpacks": [
+    {
+      "folder_name": "blue",
+      "name": "Warna UI : Biru ( New )",
+      "memory_tier": 2
+      },
+   {
+      "folder_name": "pink",
+      "name": "Warna UI : Pink ( Old )",
+      "memory_tier": 1
+      }
+   ]
 }
