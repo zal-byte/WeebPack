@@ -109,6 +109,34 @@
     "layer": 1
   },
 
+  "create_server_button@common_toggles.light_content_toggle": {
+    "size": [ "100%", "fill" ],
+    "$default_texture": "textures/ui-x/buttons/play/light",
+    "$hover_texture": "textures/ui-x/buttons/play/lighthover",
+    "$pressed_texture": "textures/ui-x/buttons/play/lighthover",
+    "$pressed_no_hover_texture": "textures/ui/button_borderless_lightpressed",
+    "$button_content": "play_ui.create_server_icon",
+    "visible": "(not $is_console)",
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "layer": 2,
+    "$radio_toggle_group": true,
+    "$toggle_name": "server_navigation_toggle",
+    "$toggle_view_binding_name": "add_server_toggle_button",
+    "$toggle_state_binding_name": "#toggle_state",
+    "$toggle_on_hover_binding_name": "none",
+    "$toggle_tab_focus_binding_type": "global",
+    "$toggle_tab_focus_binding_name": "#navigation_tab_focus_precedence",
+    "$toggle_group_forced_index": 100,
+    "$focus_override_up": "left_panel",
+    "bindings": [
+      {
+        "binding_name": "#add_server_enabled",
+        "binding_name_override": "#enabled"
+      }
+    ]
+  },
+
   "import_world_button@common_buttons.light_content_button": {
     "$default_state_border_visible": false,
     "$hover_state_border_visible": false,
@@ -129,18 +157,6 @@
         "$pressed_button_name": "button.menu_import_level"
       }
     ]
-  },
-
-  "create_server_button@common_buttons.light_content_button": {
-    "$default_state_border_visible": false,
-    "$hover_state_border_visible": false,
-    "$pressed_state_border_visible": false,
-    "$locked_state_border_visible": false,
-    "size": [ "100%", "fill" ],
-    "$default_button_texture|default": "textures/ui-x/buttons/play/light",
-    "$hover_button_texture|default": "textures/ui-x/buttons/play/lighthover",
-    "$pressed_button_texture|default": "textures/ui-x/buttons/play/lighthover",
-    "$button_content": "play_ui.create_server_icon"
   },
 
   "panel_import": {
