@@ -135,7 +135,7 @@
   "anchor_from": "bottom_right",
   "anchor_to": "bottom_right",
   "size": [ "100%" , 50 ],
-  "offset": [ -5 , -16 ],
+  "offset": [ -5 , -3 ],
   "orientation": "vertical",
   "controls": [
         { "copyright@loli.copyright": {}},
