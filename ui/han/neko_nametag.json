@@ -108,6 +108,7 @@
 
     "label": {
       "type": "label",
+      "font_type": "MinecraftTen",
       "size": [ "100% - 10px" , "default" ],
       "text_alignment": "right",
       "color": [ 1.0, 1.0, 1.0],
@@ -134,7 +135,7 @@
   "anchor_from": "bottom_right",
   "anchor_to": "bottom_right",
   "size": [ "100%" , 50 ],
-  "offset": [ -5 , -12 ],
+  "offset": [ -5 , -16 ],
   "orientation": "vertical",
   "controls": [
         { "copyright@loli.copyright": {}},
