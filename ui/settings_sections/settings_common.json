@@ -1375,6 +1375,10 @@
   },
 
   "section_toggle_base@common_toggles.light_ui_toggle": {
+    "$default_texture": "textures/ui-x/toggle_button/custom_pict_2",
+    "$hover_texture": "textures/ui-x/toggle_button/custom_pict_2",
+    "$pressed_texture": "textures/ui-x/toggle_button/custom_pict_2",
+    "$pressed_no_hover_texture": "textures/ui-x/toggle_button/custom_pict_2",
     "anchor_from": "middle",
     "anchor_to": "middle",
     "$default_border_visible": false,
@@ -1471,13 +1475,15 @@
     "anchor_from": "top_left",
     "anchor_to": "top_left",
     "controls": [
-      { "button_panel_a@settings_common.button_panel_a": { "anchor_from": "center", "anchor_to": "center", "controls": [{ "back_button@settings_common.back_button": {}}]}},
+      { "button_panel_1@settings_common.button_panel_a": { "anchor_from": "center", "anchor_to": "center", "controls": [{ "back_button@settings_common.back_button": {}}]}},
       { "space": {"type": "panel", "size": [ 3 , 3 ]}},
-      { "button_panel_a@settings_common.button_panel_a": { "anchor_from": "center", "anchor_to": "center", "controls": [{ "dialog_titles@settings_common.dialog_titles": {}}]}}
+      { "button_panel_2@settings_common.button_panel_a": { "anchor_from": "center", "anchor_to": "center", "controls": [{ "dialog_titles@settings_common.dialog_titles": {}}]}}
     ]
   },
 
   "panel_b@rem.bg_2": {
+    "alpha": 0.40,
+    "layer": 3,
     "anchor_from": "top_middle",
     "anchor_to": "top_middle",
     "offset": [ 0 , 2 ],
@@ -1488,6 +1494,12 @@
       }
     ]
   },
+  
+  "bg": {
+    "type": "image",
+    "fill": true,
+    "texture": "textures/ui-x/gradient_settings"
+  },
 
   "dialog_content": {
     "type": "panel",
@@ -1496,7 +1508,8 @@
     "controls": [
       { "panel_b@settings_common.panel_b": {}},
       { "selector_area@settings_common.selector_area": {} },
-      { "content_area@settings_common.content_area": {} }
+      { "content_area@settings_common.content_area": {} },
+      { "bg@settings_common.bg": {}}
     ]
   },
 
@@ -1536,6 +1549,7 @@
 
   // left side
   "selector_area@rem.bg_2": {
+    "alpha": 0.40,
     "offset": [ 2, -5 ],
     "size": [ "130px", "100% - 40px" ],
     "anchor_from": "bottom_left",
@@ -1565,7 +1579,7 @@
 
   // right side
   "content_area@rem.bg_2": {
-    "alpha": 0.60,
+    "alpha": 0.40,
     "offset": [ "-5px", -5 ],
     "size": [ "100% - 140px", "100% - 40px" ],
     "anchor_from": "bottom_right",
