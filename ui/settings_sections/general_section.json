@@ -9,6 +9,10 @@
   // PROFILE button & section
 
   "profile_button@settings_common.section_toggle_base": {
+    "$default_texture": "textures/ui-x/toggle_button/custom_pict_7",
+    "$hover_texture": "textures/ui-x/toggle_button/custom_pict_7",
+    "$pressed_texture": "textures/ui-x/toggle_button/custom_pict_7",
+    "$pressed_no_hover_texture": "textures/ui-x/toggle_button/custom_pict_7",
     "$toggle_view_binding_name": "profile_button_toggle",
     "$glyph_texture": "textures/ui-x/glyph/profile_glyph",
     "$glyph_color_texture": "textures/ui-x/glyph/profile_glyph_color",
@@ -1096,6 +1100,10 @@
 
   //Storage management button & section
   "storage_management_button@settings_common.section_toggle_base": {
+    "$default_texture": "textures/ui-x/toggle_button/custom_pict_9",
+    "$hover_texture": "textures/ui-x/toggle_button/custom_pict_9",
+    "$pressed_texture": "textures/ui-x/toggle_button/custom_pict_9",
+    "$pressed_no_hover_texture": "textures/ui-x/toggle_button/custom_pict_9",
     "$toggle_view_binding_name": "storage_management_button_toggle",
     "enabled": "(not $trial)",
     "visible": "($is_pregame and not $education_edition_china)",
@@ -1145,6 +1153,10 @@
   // CREATOR button & section
 
   "creator_button@settings_common.section_toggle_base": {
+    "$default_texture": "textures/ui-x/toggle_button/custom_pict_8",
+    "$hover_texture": "textures/ui-x/toggle_button/custom_pict_8",
+    "$pressed_texture": "textures/ui-x/toggle_button/custom_pict_8",
+    "$pressed_no_hover_texture": "textures/ui-x/toggle_button/custom_pict_8",
     "$toggle_view_binding_name": "creator_button_toggle",
     "$glyph_texture": "textures/ui-x/glyph/creator_glyph",
     "$glyph_color_texture": "textures/ui-x/glyph/creator_glyph_color",
@@ -1392,6 +1404,10 @@
   // VIDEO button & section
 
   "video_button@settings_common.section_toggle_base": {
+    "$default_texture": "textures/ui-x/toggle_button/custom_pict_4",
+    "$hover_texture": "textures/ui-x/toggle_button/custom_pict_4",
+    "$pressed_texture": "textures/ui-x/toggle_button/custom_pict_4",
+    "$pressed_no_hover_texture": "textures/ui-x/toggle_button/custom_pict_4",
     "$toggle_view_binding_name": "video_button_toggle",
     "$glyph_texture": "textures/ui-x/glyph/video_glyph",
     "$glyph_color_texture": "textures/ui-x/glyph/video_glyph_color",
@@ -2404,6 +2420,10 @@
   },
 
   "view_subscriptions_button@settings_common.section_toggle_base": {
+    "$default_texture": "textures/ui-x/toggle_button/custom_pict_11",
+    "$hover_texture": "textures/ui-x/toggle_button/custom_pict_11",
+    "$pressed_texture": "textures/ui-x/toggle_button/custom_pict_11",
+    "$pressed_no_hover_texture": "textures/ui-x/toggle_button/custom_pict_11",
     "$toggle_view_binding_name": "view_subscriptions_button_toggle",
     "enabled": "(not $trial)",
     "$glyph_texture": "textures/ui/subscription_glyph",
@@ -2982,6 +3002,10 @@
   // Accessibility button & section
 
   "accessibility_button@settings_common.section_toggle_base": {
+    "$default_texture": "textures/ui-x/toggle_button/custom_pict_5",
+    "$hover_texture": "textures/ui-x/toggle_button/custom_pict_5",
+    "$pressed_texture": "textures/ui-x/toggle_button/custom_pict_5",
+    "$pressed_no_hover_texture": "textures/ui-x/toggle_button/custom_pict_5",
     "$toggle_view_binding_name": "accessibility_button_toggle",
     "$glyph_texture": "textures/ui-x/glyph/accessibility_glyph",
     "$glyph_color_texture": "textures/ui-x/glyph/accessibility_glyph_color",
@@ -3102,6 +3126,10 @@
   // Music and Sound button & section
 
   "sound_button@settings_common.section_toggle_base": {
+    "$default_texture": "textures/ui-x/toggle_button/custom_pict_10",
+    "$hover_texture": "textures/ui-x/toggle_button/custom_pict_10",
+    "$pressed_texture": "textures/ui-x/toggle_button/custom_pict_10",
+    "$pressed_no_hover_texture": "textures/ui-x/toggle_button/custom_pict_10",
     "$toggle_view_binding_name": "sound_button_toggle",
     "$glyph_texture": "textures/ui-x/glyph/sound_glyph",
     "$glyph_color_texture": "textures/ui-x/glyph/sound_glyph_color",
@@ -3385,6 +3413,10 @@
   // LANGUAGE button & section
 
   "language_button@settings_common.section_toggle_base": {
+    "$default_texture": "textures/ui-x/toggle_button/custom_pict_11",
+    "$hover_texture": "textures/ui-x/toggle_button/custom_pict_11",
+    "$pressed_texture": "textures/ui-x/toggle_button/custom_pict_11",
+    "$pressed_no_hover_texture": "textures/ui-x/toggle_button/custom_pict_11",
     "$toggle_view_binding_name": "language_button_toggle",
     "$glyph_texture": "textures/ui-x/glyph/language_glyph",
     "$glyph_color_texture": "textures/ui-x/glyph/language_glyph_color",
@@ -5843,6 +5875,10 @@
   // How to Play button & section
 
   "how_to_play_button@settings_common.section_toggle_base": {
+    "$default_texture": "textures/ui-x/toggle_button/custom_pict_6",
+    "$hover_texture": "textures/ui-x/toggle_button/custom_pict_6",
+    "$pressed_texture": "textures/ui-x/toggle_button/custom_pict_6",
+    "$pressed_no_hover_texture": "textures/ui-x/toggle_button/custom_pict_6",
     "$toggle_view_binding_name": "how_to_play_button_toggle",
     "$glyph_texture": "textures/ui-x/glyph/how_to_play_button_default_light",
     "$glyph_color_texture": "textures/ui-x/glyph/how_to_play_button_default",
