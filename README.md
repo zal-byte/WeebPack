@@ -9,10 +9,7 @@ Project ini adalah untuk merubah minecraft kamu menjadi penuh dengan pict anime 
 - progress_screen ( di hapus sementara )
  
 >#### Support Minecraft Versi :
-- 1.17.x Beta ( ga work? )
-- 1.17.10
-- 1.17.0
-- 1.16.x ( ga work? )
+- v1.17x
 
 >#### Versi UI :
--1.1 ( Loli )
+-2.5.0 ( Loli )
