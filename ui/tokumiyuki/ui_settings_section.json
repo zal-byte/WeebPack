@@ -5,6 +5,7 @@
     "type": "label",
     "font_type": "MinecraftTen",
     "font_size": "extra_large",
+    "text_alignment": "center",
     "size": [ "100%", "default" ],
     "shadow": true,
     "color": [ 0.88, 0.98, 1.00 ],
@@ -541,9 +542,8 @@
 
   "fxn_label": {
     "type": "label",
-    "font_type": "",
     "size": [ "100%", "default" ],
-    "text_alignment": "left",
+    "text_alignment": "center",
     "shadow": true,
     "color": [],
     "offset": [ 15, 0 ]
@@ -636,6 +636,19 @@
             }
           }
         },
+      // orang yang membantu gw buat resource ini :)
+      { "label@custom_settings_section.fxn_label": { "text": "Thanks yang udah membantu gw untuk buat ResourcePack ini:" , "shadow": true }},
+      {
+        "aa1@settings_common.link_button": {
+        "$button_text": "TokuMiyuki",
+        "font_type": "MinecraftTen",
+        "color": [ 0.0 , 0.0 , 0.0 ],
+        "size": [ "100%" , 30 ],  
+        "property_bag": {
+        "#hyperlink": "https://facebook.com/tokumiyuki"
+            }
+          }
+        },
       //My Sosial Media :3
       { "label@custom_settings_section.fxn_label": { "text": "Media sosial saya :)" , "shadow": true }},
       { "label@custom_settings_section.fxn_label": { "text": "Facebook : " , "shadow": true }},
@@ -662,6 +675,39 @@
             }
           }
         }
+      ]
+    },
+    
+    "source_button@settings_common.section_toggle_base": {
+    "$default_texture": "textures/ui-x/toggle_button/custom_pict_19",
+    "$hover_texture": "textures/ui-x/toggle_button/custom_pict_19",
+    "$pressed_texture": "textures/ui-x/toggle_button/custom_pict_19",
+    "$pressed_no_hover_texture": "textures/ui-x/toggle_button/custom_pict_19",
+    "$toggle_view_binding_name": "source_button_toggle",
+    "$glyph_texture": "textures/ui-x/glyph/settings_about",
+    "$glyph_color_texture": "textures/ui-x/glyph/settings_about",
+    "$glyph_size": [ 23, 23],
+    "$button_text": "SC Pict",
+    "$toggle_property_bag": {
+      "#panel_title": "SC Pict"
+    }
+  },
+
+  "source_section": {
+    "type": "stack_panel",
+    "size": [ "100%", "100%c" ],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "source_button_toggle",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#visible"
+      }
+    ],
+    "controls": [
+      { "info@neko_c.about": { "text": "Coming soon ... ><"}}
       ]
     }
   }
