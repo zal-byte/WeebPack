@@ -1,29 +1,29 @@
 {
     "format_version": 2,
     "header": {
-        "description": "Resource Pack masih dalam tahap §4beta §f. Kalau ada bug report:)",
+        "description": "Kalau ada bug report:)",
         "name": "§bMC §fW I B U",
         "uuid": "bc015012-f718-45ad-af32-1f3f54b46144",
-        "version": [1, 2, 5],
+        "version": [1, 3, 0],
         "min_engine_version": [1, 17, 10]
     },
     "modules": [
         {
-            "description": "Resource Pack masih dalam tahap §4beta §f. Kalau ada bug report:)",
+            "description": "Kalau ada bug report:)",
             "type": "resources",
             "uuid": "76f6bf67-69b3-4459-8214-3de067e013c0",
-            "version": [1, 2, 5]
+            "version": [1, 3, 0]
         }
     ],
        "subpacks": [
     {
       "folder_name": "blue",
-      "name": "Warna UI : Biru ( New )",
+      "name": "Warna UI : Biru ( 1.5 )",
       "memory_tier": 2
       },
    {
       "folder_name": "pink",
-      "name": "Warna UI : Pink ( Old )",
+      "name": "Warna UI : Pink ( 1.0 )",
       "memory_tier": 1
       }
    ]
