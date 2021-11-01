@@ -50,8 +50,8 @@
         ],
         "controls": [
           { "panel_icon_6@rem.panel_icon": {"controls": [ { "panel_nama_player@loli.panel_nama_player": {}}]}},
-          { "panel_icon_5@rem.panel_icon_3": {"controls": [ { "xbox@rem.xbox": {}}], "bindings": [{ "binding_name": "#sign_in_visible", "binding_name_override": "#visible" }]}},
           { "panel_icon_7@rem.panel_icon_3": {"controls":[{ "icon1@neko_button.play_button": {}}]}},
+          { "panel_icon_5@rem.panel_icon_3": {"controls": [ { "xbox@rem.xbox": {}}], "bindings": [{ "binding_name": "#sign_in_visible", "binding_name_override": "#visible" }]}},
           { "panel_icon_1@rem.panel_icon_4": {"controls":[{ "icon1@neko_button.achievements_button": {}}]}},
           { "panel_icon_2@rem.panel_icon_4": {"controls":[{ "icon1@neko_button.store_button": {}}]}},
           { "panel_icon_3@rem.panel_icon_4": {"controls":[{ "icon1@neko_button.profile_button": {}}]}},
@@ -171,10 +171,10 @@
             "orientation": "horizontal",
             "controls": [
               {
-                "stacked_row_0@rem.stacked_row_0": { "controls": [{ "exit_button@rem.exit_button": {}}]}
+                "stacked_row_0@rem.stacked_row_0": { "controls": [{ "feedback_button@rem.feedback_button": { "ignored": "$feedback_ignored", "bindings": [ {"binding_name": "#feedback_visible","binding_name_override": "#visible"}]}}]}
               },
               {
-                "stacked_row_0@rem.stacked_row_0": { "controls": [{ "feedback_button@rem.feedback_button": { "ignored": "$feedback_ignored", "bindings": [ {"binding_name": "#feedback_visible","binding_name_override": "#visible"}]}}]}
+                "stacked_row_0@rem.stacked_row_0": { "controls": [{ "exit_button@rem.exit_button": {}}]}
               }
             ]
           }
