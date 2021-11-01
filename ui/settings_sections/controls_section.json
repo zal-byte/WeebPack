@@ -284,6 +284,10 @@
   // Keyboard and Mouse button & section
 
   "keyboard_and_mouse_button@settings_common.section_toggle_base": {
+    "$default_texture": "textures/ui-x/toggle_button/custom_pict_16",
+    "$hover_texture": "textures/ui-x/toggle_button/custom_pict_16",
+    "$pressed_texture": "textures/ui-x/toggle_button/custom_pict_16",
+    "$pressed_no_hover_texture": "textures/ui-x/toggle_button/custom_pict_16",
     "$toggle_view_binding_name": "keyboard_and_mouse_button_toggle",
     "$glyph_texture": "textures/ui-x/glyph/keyboard_and_mouse_glyph",
     "$glyph_color_texture": "textures/ui-x/glyph/keyboard_and_mouse_glyph_color",
@@ -476,6 +480,10 @@
   // Controller button & section
 
   "controller_button@settings_common.section_toggle_base": {
+    "$default_texture": "textures/ui-x/toggle_button/custom_pict_18",
+    "$hover_texture": "textures/ui-x/toggle_button/custom_pict_18",
+    "$pressed_texture": "textures/ui-x/toggle_button/custom_pict_18",
+    "$pressed_no_hover_texture": "textures/ui-x/toggle_button/custom_pict_18",
     "$toggle_view_binding_name": "controller_button_toggle",
     "$glyph_texture": "textures/ui-x/glyph/controller_glyph",
     "$glyph_color_texture": "textures/ui-x/glyph/controller_glyph_color",
@@ -705,6 +713,10 @@
   // Touch button & section
 
   "touch_button@settings_common.section_toggle_base": {
+    "$default_texture": "textures/ui-x/toggle_button/custom_pict_17",
+    "$hover_texture": "textures/ui-x/toggle_button/custom_pict_17",
+    "$pressed_texture": "textures/ui-x/toggle_button/custom_pict_17",
+    "$pressed_no_hover_texture": "textures/ui-x/toggle_button/custom_pict_17",
     "$toggle_view_binding_name": "touch_button_toggle",
     "$glyph_texture": "textures/ui-x/glyph/touch_glyph",
     "$glyph_color_texture": "textures/ui-x/glyph/touch_glyph_color",
