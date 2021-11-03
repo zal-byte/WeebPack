@@ -557,7 +557,7 @@
     "type": "panel",
     "anchor_from": "center",
     "anchor_to": "center",
-    "size": [ "90%", 5 ],
+    "size": [ "25%", 5 ],
     "layer": 5,
     "controls": [
       {
@@ -850,7 +850,7 @@
   },
 
   "overworld_loading_background@world_loading_screen_background": {
-    "texture": "textures/blocks/dirt",
+    "texture": "", // Di Hapus
     "controls": [
       {
         "background_gradient": {
@@ -869,7 +869,7 @@
   },
 
   "nether_loading_background@world_loading_screen_background": {
-    "texture": "textures/blocks/netherrack",
+    "texture": "", // Di Hapus
     "color": [ 0.5, 0.5, 0.5 ],
     "controls": [
       {
@@ -889,7 +889,7 @@
   },
 
   "theend_loading_background@world_loading_screen_background": {
-    "texture": "textures/blocks/end_stone",
+    "texture": "", // Di Hapus
     "controls": [
       {
         "background_gradient": {
@@ -1042,7 +1042,7 @@
     "controls": [
       {
         "common_panel@common.common_panel": {
-          "$dialog_background": "dialog_background_hollow_3",
+          "$dialog_background": "", // Di Hapus
           "$show_close_button": false
         }
       },
@@ -1129,6 +1129,114 @@
     ]
   },
 
+  "world_modal_progress_panel_2": {
+  "anchor_from": "bottom_left",
+  "anchor_to": "bottom_left",
+  "type": "panel",
+  "size": [ "100%" , "50px" ],
+  "variables": [
+      {
+        "requires": "$desktop_screen",
+        "$button_state_default_base": "common.button_state_default",
+        "$button_state_hover_base": "common.button_state_hover",
+        "$button_state_pressed_base": "common.button_state_pressed"
+      },
+      {
+        "requires": "$pocket_screen",
+        "$button_state_default_base": "common-classic.button_state_default",
+        "$button_state_hover_base": "common-classic.button_state_hover",
+        "$button_state_pressed_base": "common-classic.button_state_pressed"
+      }
+    ],
+    "controls": [
+      {
+        "base_content": {
+          "type": "panel",
+          "anchor_from": "bottom_left",
+          "anchor_to": "bottom_left",
+          // magic offset to make the scroll clipping perfect
+          "size": [ "100%-12px", "100%" ],
+
+          "controls": [
+            {
+              "progress_title_text@progress.progress_title_text": {
+                "color": "$title_text_color",
+                "anchor_from": "center",
+                "anchor_to": "center",
+                "offset": [ 5, -5 ]
+              }
+            },
+            {
+              "progress_bar_text@progress.progress_bar_text": {
+                "anchor_from": "center",
+                "anchor_to": "center",
+                "size": [ "default", 40 ],
+                "max_size": [ "100% - 8px", 40 ],
+                "offset": [ 5, -9 ]
+              }
+            }
+          ]
+        }
+      },
+      {
+        "inside_content": {
+          "type": "stack_panel",
+          "anchor_from": "bottom_middle",
+          "anchor_to": "bottom_middle",
+          "size": [ "100%", "30px" ],
+          "controls": [
+            {
+              "loading_bar_panel": {
+                "type": "panel",
+                "size": [ "100%", "100%" ],
+                "anchor_from": "bottom_middle",
+                "anchor_to": "bottom_middle",
+                "controls": [
+                  {
+                    "fancy_progress_loading_bars@progress.fancy_progress_loading_bars": {
+                      "offset": [ 0, 3 ]
+                    }
+                  },
+                  {
+                    "progress_loading_bars@progress.progress_loading_bars": {
+                      "offset": [ 0, 0 ]
+                    }
+                  }
+                ]
+              }
+            },
+
+            {
+              "vertical_padding": {
+                "type": "panel",
+                "size": [ 0, 5 ]
+              }
+            },
+            {
+              "modal_button_panel@progress.modal_button_panel": {
+                "anchor_from": "bottom_middle",
+                "anchor_to": "bottom_middle",
+                "size": [ "100%", "100%c" ],
+                "bindings": [
+                  {
+                    "binding_name": "#cancel_visible",
+                    "binding_name_override": "#visible"
+                  }
+                ]
+              }
+            },
+            {
+              "vertical_padding_2": {
+                "type": "panel",
+                "size": [ 0, 14 ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
   "world_convert_modal_progress_screen_content": {
     "type": "panel",
 
@@ -1136,13 +1244,10 @@
 
     "controls": [
       {
-        "title_panel_content@common_art.title_panel_content": {
-          "$splash_text_visible": false,
-          "layer": -2
-        }
+        "world_modal_progress_panel_2@progress.world_modal_progress_panel_2": {}
       },
       {
-        "world_modal_progress_panel@progress.world_modal_progress_panel": {}
+        "loading_spin@progress.loading_spin": { "size": [ 50 , 50 ]}
       },
       { "popup_dialog_factory@progress.popup_dialog_factory": {} }
     ]
@@ -1152,15 +1257,10 @@
     "type": "panel",
     "controls": [
       {
-        "title_panel_content@common_art.title_panel_content": {
-          "$splash_text_visible": false
-        }
+        "world_modal_progress_panel_2@progress.world_modal_progress_panel_2": {}
       },
       {
-        "world_modal_progress_panel@progress.world_modal_progress_panel": {}
-      },
-      {
-        "save_icon@progress.auto_save": {}
+        "save_icon@progress.auto_save": { "size": [ 50 , 50 ]}
       },
       { "popup_dialog_factory@progress.popup_dialog_factory": {} }
     ]
@@ -1190,6 +1290,35 @@
     "bindings": [
       {
         "binding_name": "#auto_save_animation_visible",
+        "binding_name_override": "#visible"
+      }
+    ]
+  },
+  
+  "loading_spin_animation": {
+    "anim_type": "flip_book",
+    "initial_uv": [ 0, 0 ],
+    "frame_count": 10,
+    "frame_step": 20,
+    "fps": 12,
+    "reversible": false,
+    "easing": "linear"
+  },
+
+  "loading_spin": {
+    "type": "image",
+    "layer": 31,
+    "texture": "textures/ui/loading_spin",
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "offset": [ 0, 0 ],
+    "size": [ 7, 7 ],
+    "uv_size": [ 7, 7 ],
+    "uv": "@loading_spin_animation",
+    "disable_anim_fast_forward": true,
+    "bindings": [
+      {
+        "binding_name": "#loading_spin_animation_visible",
         "binding_name_override": "#visible"
       }
     ]
