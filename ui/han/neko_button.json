@@ -144,6 +144,12 @@
 
     "play_button@neko_button.fxbutton1": {
       "$border_visible": false,
+      "sound_name": "random.kyaa",
+      "sound_volume": 1.0,
+      "sound_pitch": 1.0,
+      "default_control": "default",
+      "hover_control": "hover",
+      "pressed_control": "pressed",
       "size": [ "100%" , "100%" ],
       "$button_type_panel": "neko_button.yuki",
       "$glyph_texture": "textures/ui-x/icon-new/play",
