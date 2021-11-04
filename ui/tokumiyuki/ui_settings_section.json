@@ -630,7 +630,7 @@
         "$button_text": "Neko059",
         "font_type": "MinecraftTen",
         "color": [ 0.0 , 0.0 , 0.0 ],
-        "size": [ "100%" , 30 ],  ``
+        "size": [ "100%" , 30 ],
         "property_bag": {
         "#hyperlink": "https://github.com/Neko059"
             }
