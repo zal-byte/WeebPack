@@ -78,7 +78,10 @@
     },
 
     "panel_nama_player@loli.panel": {
-      "size": [ "100%" , "100% - 2px" ],
+      "anchor_from": "bottom_middle",
+      "anchor_to": "bottom_middle",
+      "offset": [ 0, -10 ],
+      "size": [ "100px" , "25px" ],
       "controls": [
         {
           "stack_panel": {
