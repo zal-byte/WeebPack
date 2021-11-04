@@ -121,6 +121,10 @@
       {
         "switch_game_button@world_section.game_button": {
           "ignored": "(not $nx_os)",
+          "$default_texture": "textures/ui-x/toggle_button/custom_pict_20",
+          "$hover_texture": "textures/ui-x/toggle_button/custom_pict_20",
+          "$pressed_texture": "textures/ui-x/toggle_button/custom_pict_20",
+          "$pressed_no_hover_texture": "textures/ui-x/toggle_button/custom_pict_20",
           "$toggle_group_forced_index": "$game_forced_index",
           "$glyph_texture": "textures/ui-x/glyph/controller_glyph_switch",
           "$glyph_color_texture": "textures/ui-x/glyph/controller_glyph_color_switch"
@@ -128,6 +132,10 @@
       },
       {
         "multiplayer_button@world_section.multiplayer_button": {
+          "$default_texture": "textures/ui-x/toggle_button/custom_pict_21",
+          "$hover_texture": "textures/ui-x/toggle_button/custom_pict_21",
+          "$pressed_texture": "textures/ui-x/toggle_button/custom_pict_21",
+          "$pressed_no_hover_texture": "textures/ui-x/toggle_button/custom_pict_21",
           "visible": "(not $education_edition)",
           "$toggle_group_forced_index": "$multiplayer_forced_index"
         }
