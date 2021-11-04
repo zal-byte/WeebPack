@@ -624,20 +624,31 @@
         }
       },
       //Contributors Github
-      { "label@custom_settings_section.fxn_label": { "text": "Contributors Github :" , "shadow": true }},
+      { "label@custom_settings_section.fxn_label": { "text": "Contributors Github :" , "shadow": false }},
       {
         "cc1@settings_common.link_button": {
         "$button_text": "Neko059",
         "font_type": "MinecraftTen",
         "color": [ 0.0 , 0.0 , 0.0 ],
-        "size": [ "100%" , 30 ],  
+        "size": [ "100%" , 30 ],  ``
         "property_bag": {
         "#hyperlink": "https://github.com/Neko059"
             }
           }
         },
-      // orang yang membantu gw buat resource ini :)
-      { "label@custom_settings_section.fxn_label": { "text": "Thanks yang udah membantu gw untuk buat ResourcePack ini:" , "shadow": true }},
+      {
+        "cc2@settings_common.link_button": {
+        "$button_text": "Zal-Byte",
+        "font_type": "MinecraftTen",
+        "color": [ 0.0 , 0.0 , 0.0 ],
+        "size": [ "100%" , 30 ],  
+        "property_bag": {
+        "#hyperlink": "https://github.com/zal-byte"
+            }
+          }
+        },
+      // yang membantu gw buat resource ini :)
+      { "label@custom_settings_section.fxn_label": { "text": "Orang dalam" , "shadow": true }},
       {
         "aa1@settings_common.link_button": {
         "$button_text": "TokuMiyuki",
@@ -645,33 +656,7 @@
         "color": [ 0.0 , 0.0 , 0.0 ],
         "size": [ "100%" , 30 ],  
         "property_bag": {
-        "#hyperlink": "https://facebook.com/tokumiyuki"
-            }
-          }
-        },
-      //My Sosial Media :3
-      { "label@custom_settings_section.fxn_label": { "text": "Media sosial saya :)" , "shadow": true }},
-      { "label@custom_settings_section.fxn_label": { "text": "Facebook : " , "shadow": true }},
-      {
-        "facebook@settings_common.link_button": {
-        "$button_text": "Han",
-        "font_type": "MinecraftTen",
-        "color": [ 0.0 , 0.0 , 0.0 ],
-        "size": [ "100%" , 30 ],  
-        "property_bag": {
-        "#hyperlink": "https://www.facebook.com/profile.php?id=100073215481719"
-            }
-          }
-        },
-      { "label@custom_settings_section.fxn_label": { "text": "Instagram : " , "shadow": true }},
-      {
-        "Instagram@settings_common.link_button": {
-        "$button_text": "Neko_131",
-        "font_type": "MinecraftTen",
-        "color": [ 0.0 , 0.0 , 0.0 ],
-        "size": [ "100%" , 30 ],  
-        "property_bag": {
-        "#hyperlink": "https://www.instagram.com/neko_131"
+        "#hyperlink": "https://web.facebook.com/tokumi.yuki.14"
             }
           }
         }
