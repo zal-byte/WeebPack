@@ -19,12 +19,12 @@
     {
       "folder_name": "blue",
       "name": "Warna UI : Biru ( 1.5 )",
-      "memory_tier": 2
+      "memory_tier": 1
       },
    {
       "folder_name": "pink",
       "name": "Warna UI : Pink ( 1.0 )",
-      "memory_tier": 1
+      "memory_tier": 2
       }
    ]
 }
