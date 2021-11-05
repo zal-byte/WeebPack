@@ -6525,9 +6525,9 @@
     "type": "panel",
     "offset": [ 0 , -30 ],
     "controls": [
-      {
+    /*  {
         "background@rem.bg_2": {}
-      },
+      }, */
       {
         "content@$scroll_tab_content": {
           "layer": 2,
@@ -6726,6 +6726,14 @@
             "join_by_code": "@play.popup_dialog_join_by_code",
             "high_ping_warning": "@play.popup_dialog_high_ping"
           }
+        }
+      },
+      {
+        "bg": {
+          "type": "image",
+          "layer": 1,
+          "texture": "textures/ui-x/gradient_settings_2",
+          "fill": true
         }
       }
     ]
