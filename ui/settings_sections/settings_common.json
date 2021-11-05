@@ -1485,7 +1485,7 @@
     ]
   },
 
-  "panel_b@rem.bg_2": {
+  "panel_b@neko_c.bg_2": {
     "alpha": 0.40,
     "layer": 3,
     "anchor_from": "top_middle",
@@ -1552,7 +1552,7 @@
   },
 
   // left side
-  "selector_area@rem.bg_2": {
+  "selector_area@neko_c.bg_2": {
     "alpha": 0.40,
     "offset": [ 2, -5 ],
     "size": [ "150px", "100% - 40px" ],
@@ -1582,7 +1582,7 @@
   },
 
   // right side
-  "content_area@rem.bg_2": {
+  "content_area@neko_c.bg_2": {
     "alpha": 0.40,
     "offset": [ "-5px", -5 ],
     "size": [ "100% - 160px", "100% - 40px" ],
