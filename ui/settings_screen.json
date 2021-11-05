@@ -125,13 +125,6 @@
         }
       },
       {
-        "source_button@custom_settings_section.source_button": {
-          "$toggle_group_forced_index": 5000, 
-          "ignored": "(not $is_pregame)",
-          "ignored": "(not $include_controls_and_settings_sections )"
-        }
-      },
-      {
         "nakanomiku@settings_common.selector_group_label": {
           "ignored": "(not $include_controls_and_settings_sections)",
           "$yuki": "Accesibility & How To Play?"
