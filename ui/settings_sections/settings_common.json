@@ -932,7 +932,9 @@
     "$hover_texture": "textures/ui-x/buttons/dropdown/drop_hover",
     "$pressed_texture": "textures/ui-x/buttons/dropdown/drop_pressed",
     "$pressed_no_hover_texture": "textures/ui-x/buttons/dropdown/drop_pressednohover",
-    "$locked_texture": "textures/ui/disabledButtonNaoBorder",
+    "$locked_button_texture|default": "textures/ui/disabledButtonNoBorder",
+
+
     "size": [ "100%", "100%" ],
     "$button_type_panel|default": "settings_common.default_options_dropdown_toggle_button_state_content",
 
@@ -954,6 +956,8 @@
     "$hover_texture": "textures/ui-x/buttons/dropdown/drop_hover",
     "$pressed_texture": "textures/ui-x/buttons/dropdown/drop_pressed",
     "$pressed_no_hover_texture": "textures/ui-x/buttons/dropdown/drop_pressednohover",
+    "$locked_button_texture|default": "textures/ui/disabledButtonNoBorder",
+
     "size": [ "100%", "100%" ],
     "$button_type_panel|default": "settings_common.default_options_dropdown_toggle_button_state_content",
 
@@ -1551,7 +1555,7 @@
   "selector_area@rem.bg_2": {
     "alpha": 0.40,
     "offset": [ 2, -5 ],
-    "size": [ "130px", "100% - 40px" ],
+    "size": [ "150px", "100% - 40px" ],
     "anchor_from": "bottom_left",
     "anchor_to": "bottom_left",
     "layer": 2,
@@ -1581,7 +1585,7 @@
   "content_area@rem.bg_2": {
     "alpha": 0.40,
     "offset": [ "-5px", -5 ],
-    "size": [ "100% - 140px", "100% - 40px" ],
+    "size": [ "100% - 160px", "100% - 40px" ],
     "anchor_from": "bottom_right",
     "anchor_to": "bottom_right",
     "layer": 1,
