@@ -315,7 +315,7 @@
       ]
     },
 
-    "stack_tab_3@rem.bg_2": {
+    "stack_tab_3@neko_c.bg_2": {
     "layer": 2,
     "size": [ "100%" , 29.9 ], // Kenapa ga 30 aja? Gabut hehe :v
     "max_size": [ "100% - 175px", 30 ],
