@@ -151,6 +151,13 @@
             "anchor_from": "top_right",
             "anchor_to": "top_right",
             "orientation": "horizontal",
+            "animation_reset_name": "screen_animation_reset",
+            "anims": [
+              "@anim_test.screen_exit_animation_push_offset_2",
+              "@anim_test.screen_exit_animation_pop_offset_2",
+              "@anim_test.screen_entrance_animation_push_offset_2",
+              "@anim_test.screen_entrance_animation_pop_offset_2"
+            ],
             "controls": [
               {
                 "stacked_row_0@rem.stacked_row_0": { "controls": [{ "feedback_button@rem.feedback_button": { "ignored": "$feedback_ignored", "bindings": [ {"binding_name": "#feedback_visible","binding_name_override": "#visible"}]}}]}
@@ -181,9 +188,23 @@
     "texture": "textures/ui-x/gradient"
   },
 
+  "info" : {
+    "type": "label",
+    "layer": 2,
+    "size": [ "100%", "default" ],
+    "text_alignment": "center",
+    "font_size": "small",
+    "text": "! Note : Mohon turunkan volume HP\nketika menekan tombol 'Play / Main'",
+    "color": [ 0.29, 0.29, 0.29 ],
+    "offset": [ 0, 10 ],
+    "anchor_from": "top_middle",
+    "anchor_to": "top_middle"
+  },
+
   "button_panel": {
   "type": "panel",
   "controls": [      
+        { "info@rem.info": {}},
         { "panel_nama_player@loli.panel_nama_player": {}},
         { "bg@rem.bg": {}},
         { "version_panel@loli.version_panel": {}},
