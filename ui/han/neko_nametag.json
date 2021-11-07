@@ -140,6 +140,13 @@
   "size": [ "100%" , 50 ],
   "offset": [ -5 , -3 ],
   "orientation": "vertical",
+  "animation_reset_name": "screen_animation_reset",
+  "anims": [
+    "@anim_test.screen_exit_animation_push_offset_2",
+    "@anim_test.screen_exit_animation_pop_offset_2",
+    "@anim_test.screen_entrance_animation_push_offset_2",
+    "@anim_test.screen_entrance_animation_pop_offset_2"
+  ],
   "controls": [
         { "copyright@loli.copyright": {}},
         { "space": {"type": "panel", "size": [ 2 , 2 ]}},
