@@ -5928,6 +5928,9 @@
 
   "worlds_scroll_content@play.common_content": {
     "controls": [
+   /*   {
+        "bg@neko_c.bg_2": {}
+      }, */
       {
         "worlds_stack_panel": {
           "type": "stack_panel",
@@ -6534,7 +6537,7 @@
           "anchor_from": "top_left",
           "anchor_to": "top_left",
           // magic offset to make the scroll clipping perfect
-          "size": [ "100%-12px", "100%-12px" ],
+          "size": [ "100%-5px", "100%-12px" ],
           "offset": [ 6, 6 ],
           "ttsSectionContainer": true
         }
@@ -6625,10 +6628,10 @@
 
   "common_play_screen_panel": { // Di Ubah
     "type": "panel",
-    "offset": [ -12 , 0 ],
-    "anchor_from": "right_middle",
-    "anchor_to": "right_middle",
-    "size": [ "100% - 175px", "87.89% - 30px" ]
+    "offset": [ -3, -2 ],
+    "anchor_from": "middle",
+    "anchor_to": "middle",
+    "size": [ "100% - 22px", "100% - 85px" ]
   },
 
   "play_screen_panel@play.common_play_screen_panel": {
@@ -6705,7 +6708,7 @@
     ],
     "controls": [
       {
-        "stack_tab@play_ui.stack_tab": {}
+        "stack_tab_1@play_ui.stack_tab_1": {}
       },
       {
         "stack_tab_2@play_ui.stack_tab_2": {}

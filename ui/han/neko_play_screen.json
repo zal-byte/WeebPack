@@ -8,7 +8,7 @@
     
     "panel_content_button": {
     "type": "panel",
-    "size": [ "100%" , "80px" ]
+    "size": [ "90px" , "100%" ]
     },
 
     "panel_button": {
@@ -65,25 +65,7 @@
     "$tab_content": "play.common_navigation_tab_content"
   },
 
-  "import_world_icon": {
-    "type": "image",
-    "size": [ 25, 25 ],
-    "texture": "textures/ui-x/icon-new/import_world"
-  },
-
-  "create_server_icon": {
-    "type": "image",
-    "size": [ 25, 25 ],
-    "texture": "textures/ui-x/icon-new/add_server"
-  },
-
-  "create_world_icon": {
-    "type": "image",
-    "size": [ 25, 25 ],
-    "texture": "textures/ui-x/icon-new/create_world"
-  },
-
-  "create_new_world_button@common_buttons.light_content_button": {
+  "create_new_world_button@neko_button.fxbutton2": {
     "variables": [
       {
         "requires": "($local_world_upload)",
@@ -94,15 +76,11 @@
         "$pressed_button_name": "button.menu_local_world_create"
       }
     ],
-    "$default_state_border_visible": false,
-    "$hover_state_border_visible": false,
-    "$pressed_state_border_visible": false,
-    "$locked_state_border_visible": false,
-    "$default_button_texture|default": "textures/ui-x/buttons/play/light",
-    "$hover_button_texture|default": "textures/ui-x/buttons/play/lighthover",
-    "$pressed_button_texture|default": "textures/ui-x/buttons/play/lighthover",
-    "$button_content": "play_ui.create_world_icon",
-    "size": [ "100%", "fill" ],
+    "$glyph_texture": "textures/ui-x/icon-new/create_world",
+    "$button_text": "Create A World",
+    "size": [ "100%", "100% - 10px" ],
+    "anchor_from": "center",
+    "anchor_to": "center",
     "$button_focus_precedence": 10,
     "$create_new_row_focus_override_up|default": "close_button",
     "$focus_override_up": "$create_new_row_focus_override_up",
@@ -110,15 +88,40 @@
   },
 
   "create_server_button@common_toggles.light_content_toggle": {
-    "size": [ "100%", "fill" ],
+    "size": [ "100%", "100% - 10px" ],
+    "$button_text": "Add Server",
+
+    //Warna
+    "$light_toggle_default_text_color": [ 0.0, 0.0, 0.0 ],
+    "$light_toggle_hover_text_color": [ 0.5, 0.5, 0.5 ],
+    "$light_toggle_checked_default_text_color": [ 0.2, 0.2, 0.2 ],
+    "$light_toggle_checked_hover_text_color": [ 0.72, 0.00, 0.00 ],
+
+    //Glyph
+    "$glyph_size": [ 25, 25 ],
+    "$glyph_texture": "textures/ui-x/icon-new/add_server",
+    "$button_type_panel": "neko_button.zal",
+
+    //Warna Glyph
+    "$light_glyph_toggle_default_color": [ 1.0, 1.0, 1.0 ],
+    "$light_glyph_toggle_hover_color": [ 1.0, 1.0, 1.0 ],
+    "$light_glyph_toggle_checked_default_color": [ 0.0, 0.0, 0.0 ],
+    "$light_glyph_toggle_checked_hover_color": [ 1.0, 1.0, 1.0 ],
+
+    //Texture
     "$default_texture": "textures/ui-x/buttons/play/light",
     "$hover_texture": "textures/ui-x/buttons/play/lighthover",
     "$pressed_texture": "textures/ui-x/buttons/play/lighthover",
     "$pressed_no_hover_texture": "textures/ui/button_borderless_lightpressed",
+    
+    //Border
+    "$default_border_visible": false,
+    "$hover_border_visible": false,
+
     "$button_content": "play_ui.create_server_icon",
     "visible": "(not $is_console)",
-    "anchor_from": "top_left",
-    "anchor_to": "top_left",
+    "anchor_from": "center",
+    "anchor_to": "center",
     "layer": 2,
     "$radio_toggle_group": true,
     "$toggle_name": "server_navigation_toggle",
@@ -137,16 +140,12 @@
     ]
   },
 
-  "import_world_button@common_buttons.light_content_button": {
-    "$default_state_border_visible": false,
-    "$hover_state_border_visible": false,
-    "$pressed_state_border_visible": false,
-    "$locked_state_border_visible": false,
-    "size": [ "100%", "fill" ],
-    "$default_button_texture|default": "textures/ui-x/buttons/play/light",
-    "$hover_button_texture|default": "textures/ui-x/buttons/play/lighthover",
-    "$pressed_button_texture|default": "textures/ui-x/buttons/play/lighthover",
-    "$button_content": "play_ui.import_world_icon",
+  "import_world_button@neko_button.fxbutton2": {
+    "size": [ "100%", "100% - 10px" ],
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "$glyph_texture": "textures/ui-x/icon-new/import_world",
+    "$button_text": "Import",
     "variables": [
       {
         "requires": "($local_world_upload)",
@@ -159,6 +158,16 @@
     ]
   },
 
+  "back_button@neko_button.fxbutton2": {
+    "size": [ "100%", "100% - 10px" ],
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "$glyph_texture": "textures/ui-x/icon-new/back",
+    "$button_text": "Kembali",
+    "$pressed_button_name": "button.menu_exit"
+  },
+
+
   "panel_import": {
     "type": "panel",
     "size": [ "100%", "fill" ]
@@ -169,104 +178,35 @@
     "texture": "textures/ui-x/dialog/han"
   },
 
-  "import_world_panel@play_ui.bg_3": {
+  "import_world_panel": {
+    "type": "panel",
     "alpha": 0.60,
-    "size": [ "100% - 5px", "100% - 5px" ],
-    "anchor_from": "middle",
-    "anchor_to": "middle",
+    "size": [ "90px" , "100%" ],
     "controls": [
       {
-        "stack_panel": {
-          "type": "stack_panel",
-          "orientation": "vertical",
-          "anchor_from": "bottom_left",
-          "anchor_to": "bottom_left",
-          "size": [ "100%" , "100%" ],
-          "controls": [
-            {
-              "import_world_button@play_ui.import_world_button": {}
-            },
-            {
-              "label": {
-                "type": "label",
-                "layer": 10,
-                "text_alignment": "center",
-                "color": [ 1.0, 1.0, 1.0 ],
-                "font_type": "MinecraftTen",
-                "size": [ "100%", "20px" ],
-                "text": "IMPORT"
-              }
-            }
-          ]
-        }
+        "import_world_button@play_ui.import_world_button": {}
       }
     ]
   },
 
-  "create_server_panel@play_ui.bg_3": {
+  "create_server_panel": {
+    "type": "panel",
     "alpha": 0.60,
-    "size": [ "100% - 5px", "100% - 5px" ],
-    "anchor_from": "middle",
-    "anchor_to": "middle",
+    "size": [ "90px" , "100%" ],
     "controls": [
       {
-        "stack_panel": {
-          "type": "stack_panel",
-          "orientation": "vertical",
-          "anchor_from": "bottom_left",
-          "anchor_to": "bottom_left",
-          "size": [ "100%" , "100%" ],
-          "controls": [
-            {
-              "create_server_button@play_ui.create_server_button": {}
-            },
-            {
-              "label": {
-                "type": "label",
-                "layer": 10,
-                "text_alignment": "center",
-                "color": [ 1.0, 1.0, 1.0 ],
-                "font_type": "MinecraftTen",
-                "size": [ "100%", "20px" ],
-                "text": "Add Server"
-              }
-            }
-          ]
-        }
+        "create_server_button@play_ui.create_server_button": {}
       }
     ]
   },
 
-  "create_world_panel@play_ui.bg_3": {
+  "create_world_panel@": {
+    "type": "panel",
     "alpha": 0.60,
-    "size": [ "100% - 5px", "100% - 5px" ],
-    "anchor_from": "middle",
-    "anchor_to": "middle",
+    "size": [ "90px" , "100%" ],
     "controls": [
       {
-        "stack_panel": {
-          "type": "stack_panel",
-          "orientation": "vertical",
-          "anchor_from": "bottom_left",
-          "anchor_to": "bottom_left",
-          "size": [ "100%" , "100%" ],
-          "controls": [
-            {
-              "create_new_world_button@play_ui.create_new_world_button": {}
-            },
-            {
-              "label": {
-                "type": "label",
-                "layer": 10,
-                "text_alignment": "center",
-                "color": [ 1.0, 1.0, 1.0 ],
-                "font_type": "MinecraftTen",
-                "size": [ "100%", "20px" ],
-                "text": "Create World"
-              }
-            }
-          ]
-        }
+        "create_new_world_button@play_ui.create_new_world_button": {}
       }
     ]
   },
@@ -277,37 +217,40 @@
     "texture": "textures/ui-x/icon-new/create_world"
   },
 
-    "stack_tab_2": {
-    "layer": 2,
-    "type": "panel",
-    "size": [ 100 , "100% - 10px" ],
-    "anchor_from": "left_middle",
-    "anchor_to": "left_middle",
-    "offset": [ 7 , 0 ],
-    "controls": [
-      {
-        "stack_panel_0": {
-        "type": "stack_panel",
-        "size": [ "100%" , "100%c" ],
-        "orientation": "vertical",
-        "anchor_from": "left_middle",
-        "anchor_to": "left_middle",
-        "animation_reset_name": "screen_animation_reset",
-        "anims": [
-            "@anim_test.screen_exit_animation_push_offset",
-            "@anim_test.screen_exit_animation_pop_offset",
-            "@anim_test.screen_entrance_animation_push_offset",
-            "@anim_test.screen_entrance_animation_pop_offset"
-          ],
-        "controls": [
+    "stack_tab_1": {
+      "type": "panel",
+      "size": [ "55%" , "30px" ],
+      "anchor_from": "top_left",
+      "anchor_to": "top_left",
+      "controls": [
+        {
+          "stack_tab_1": {
+            "type": "stack_panel",
+            "orientation": "vertical",
+            "size": [ "100% - 20px", "100%c" ],
+            "anchor_from": "left",
+            "anchor_to": "left",
+            "controls": [
               {
-                "panel_content_button@play_ui.panel_content_button": { "controls": [ { "create_server_panel@play_ui.create_server_panel": {}}]}
+                "label_01": {
+                  "type": "label",
+                  "layer": 2,
+                  "font_type": "MinecraftTen",
+                  "font_size": "large",
+                  "color": "black",
+                  "size": [ "100% - 10px" , "default" ],
+                  "text": "PLAY"
+                }
               },
               {
-                "panel_content_button@play_ui.panel_content_button": { "controls": [ { "import_world_panel@play_ui.import_world_panel": {}}]}
-              },
-              {
-                "panel_content_button@play_ui.panel_content_button": { "controls": [ { "create_world_panel@play_ui.create_world_panel": {}}]}
+                "label_01": {
+                  "type": "label",
+                  "layer": 2,
+                  "font_type": "MinecraftTen",
+                  "color": "black",
+                  "size": [ "100% - 10px" , "default" ],
+                  "text": "WORLD | SERVER | REALMS"
+                }
               }
             ]
           }
@@ -315,21 +258,21 @@
       ]
     },
 
-    "stack_tab_3@neko_c.bg_2": {
-    "layer": 2,
-    "size": [ "100%" , 29.9 ], // Kenapa ga 30 aja? Gabut hehe :v
-    "max_size": [ "100% - 175px", 30 ],
-    "anchor_from": "bottom_right",
-    "anchor_to": "bottom_right",
-    "offset": [ -12 , -7 ],
+    "stack_tab_2": {
+    "type": "panel",
+    "size": [ "45%" , 29.9 ], // Kenapa ga 30 aja? Gabut hehe :v
+    "max_size": [ "100% - 26px", 30 ],
+    "anchor_from": "top_right",
+    "anchor_to": "top_right",
+    "offset": [ 0 , 3 ],
     "controls": [
         {
           "stack_panel": {
           "type": "stack_panel",
           "orientation": "horizontal",
-          "size": [ "100%" , "100%" ],
-          "anchor_from": "left",
-          "anchor_to": "left",
+          "size": [ "100% - 20px" , "100%" ],
+          "anchor_from": "top_left",
+          "anchor_to": "top_left",
           "controls": [
               {
                 "panel_01@play_ui.panel_tab": { "controls": [ { "world_navigation_tab@play_ui.world_navigation_tab": {}}]}
@@ -339,6 +282,51 @@
               },
               {
                 "panel_01@play_ui.panel_tab": { "controls": [ { "server_navigation_tab@play_ui.server_navigation_tab": {}}]}
+              }
+            ]
+          }
+        }
+      ]
+    },
+
+    "stack_tab_3": {
+    "type": "panel",
+    "size": [ "100% - 26px" , 75 ],
+    "anchor_from": "bottom_middle",
+    "anchor_to": "bottom_middle",
+    "offset": [ 0 , -3 ],
+    "controls": [
+      {
+        "stack_panel_0": {
+        "type": "stack_panel",
+        "orientation": "horizontal",
+        "size": [ "100%" , "100%" ],
+        "anchor_from": "center",
+        "anchor_to": "center",
+        "controls": [
+              {
+                 "panel": {
+                 "type": "panel",
+                 "size": [ "fill" , "100%" ]
+                }
+              },
+              {
+                "panel_content_button@play_ui.panel_content_button": { "controls": [ { "back_button@play_ui.back_button": {}}]}
+              },
+              {
+                "panel_content_button@play_ui.panel_content_button": { "controls": [ { "create_world_panel@play_ui.create_world_panel": {}}]}
+              },
+              {
+                "panel_content_button@play_ui.panel_content_button": { "controls": [ { "import_world_panel@play_ui.import_world_panel": {}}]}
+              },
+              {
+                "panel_content_button@play_ui.panel_content_button": { "controls": [ { "create_server_panel@play_ui.create_server_panel": {}}]}
+              },
+              {
+                "panel": {
+                  "type": "panel",
+                  "size": [ "fill" , "100%" ]
+                }
               }
             ]
           }
