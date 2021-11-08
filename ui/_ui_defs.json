@@ -17,9 +17,9 @@
     // C u $ T o M J s O ? 2.0
 
 
-    "ui/tokumiyuki/custom_animation.json",
-    "ui/tokumiyuki/ui_settings_common.json",
-    "ui/tokumiyuki/ui_settings_section.json",
+    "ui/byte/custom_animation.json",
+    "ui/byte/ui_settings_common.json",
+    "ui/byte/ui_settings_section.json",
 
 
     "ui/account_banned_screen.json",
