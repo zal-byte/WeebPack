@@ -13,10 +13,10 @@
   },
 
   "graphic_button@settings_common.section_toggle_base": {
-    "$default_texture": "textures/ui-x/toggle_button/custom_pict",
-    "$hover_texture": "textures/ui-x/toggle_button/custom_pict",
-    "$pressed_texture": "textures/ui-x/toggle_button/custom_pict",
-    "$pressed_no_hover_texture": "textures/ui-x/toggle_button/custom_pict",
+    "$default_texture": "textures/ui-x/toggle_button/button_borderless_light",
+    "$hover_texture": "textures/ui-x/toggle_button/button_borderless_lighthover",
+    "$pressed_texture": "textures/ui-x/toggle_button/button_borderless_lightpressed",
+    "$pressed_no_hover_texture": "textures/ui-x/toggle_button/button_borderless_lightpressednohover",
     "$toggle_view_binding_name": "graphic_button_toggle",
     "$glyph_texture": "textures/ui-x/glyph/settings_grafis",
     "$glyph_color_texture": "textures/ui-x/glyph/settings_grafis",
@@ -247,10 +247,10 @@
   },
 
   "gameplay_button@settings_common.section_toggle_base": {
-    "$default_texture": "textures/ui-x/toggle_button/custom_pict_3",
-    "$hover_texture": "textures/ui-x/toggle_button/custom_pict_3",
-    "$pressed_texture": "textures/ui-x/toggle_button/custom_pict_3",
-    "$pressed_no_hover_texture": "textures/ui-x/toggle_button/custom_pict_3",
+    "$default_texture": "textures/ui-x/toggle_button/button_borderless_light",
+    "$hover_texture": "textures/ui-x/toggle_button/button_borderless_lighthover",
+    "$pressed_texture": "textures/ui-x/toggle_button/button_borderless_lightpressed",
+    "$pressed_no_hover_texture": "textures/ui-x/toggle_button/button_borderless_lightpressednohover",
     "$toggle_view_binding_name": "gameplay_button_toggle",
     "$glyph_texture": "textures/ui-x/glyph/controller_glyph_color",
     "$glyph_color_texture": "textures/ui-x/glyph/controller_glyph_color",
@@ -550,10 +550,10 @@
   },
   
   "about_button@settings_common.section_toggle_base": {
-    "$default_texture": "textures/ui-x/toggle_button/custom_pict_2",
-    "$hover_texture": "textures/ui-x/toggle_button/custom_pict_2",
-    "$pressed_texture": "textures/ui-x/toggle_button/custom_pict_2",
-    "$pressed_no_hover_texture": "textures/ui-x/toggle_button/custom_pict_2",
+    "$default_texture": "textures/ui-x/toggle_button/button_borderless_light",
+    "$hover_texture": "textures/ui-x/toggle_button/button_borderless_lighthover",
+    "$pressed_texture": "textures/ui-x/toggle_button/button_borderless_lightpressed",
+    "$pressed_no_hover_texture": "textures/ui-x/toggle_button/button_borderless_lightpressednohover",
     "$toggle_view_binding_name": "about_button_toggle",
     "$glyph_texture": "textures/ui-x/glyph/settings_about",
     "$glyph_color_texture": "textures/ui-x/glyph/settings_about",
@@ -623,6 +623,37 @@
           ]
         }
       },
+      //Yang Buat
+      { "label@custom_settings_section.fxn_label": { "text": "Owner ResourcePack :" , "shadow": false }},
+      {
+        "cc1@settings_common.link_button": {
+        "$button_text": "Han/Farhan",
+        "font_type": "MinecraftTen",
+        "color": [ 0.0 , 0.0 , 0.0 ],
+        "size": [ "100%" , 30 ],
+        "property_bag": {
+        "#hyperlink": "https://github.com/Neko059"
+            }
+          }
+        },
+        {
+        "line_b": {
+          "type": "panel",
+          "size": [ "100%", "100%c + 14px" ],
+          "controls": [
+            {
+              "section_divider": {
+                "type": "image",
+                "size": [ "100% - 5px", 1 ],
+                "anchor_from": "center",
+                "anchor_to": "center",
+                "layer": 3,
+                "texture": "textures/ui/list_item_divider_line_light"
+              }
+            }
+          ]
+        }
+      },
       //Contributors Github
       { "label@custom_settings_section.fxn_label": { "text": "Contributors Github :" , "shadow": false }},
       {
@@ -644,19 +675,6 @@
         "size": [ "100%" , 30 ],  
         "property_bag": {
         "#hyperlink": "https://github.com/zal-byte"
-            }
-          }
-        },
-      // yang membantu gw buat resource ini :)
-      { "label@custom_settings_section.fxn_label": { "text": "Orang dalam" , "shadow": true }},
-      {
-        "aa1@settings_common.link_button": {
-        "$button_text": "TokuMiyuki",
-        "font_type": "MinecraftTen",
-        "color": [ 0.0 , 0.0 , 0.0 ],
-        "size": [ "100%" , 30 ],  
-        "property_bag": {
-        "#hyperlink": "https://web.facebook.com/tokumi.yuki.14"
             }
           }
         }
