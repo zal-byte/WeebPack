@@ -2,6 +2,7 @@
     "namespace": "neko_c",
     
     /*
+    54 68 78 20 74 6f 6b 75 6d 69 79 75 6b 69 0a 4b 61 72 65 6e 61 20 75 64 61 68 20 6d 61 75 20 6d 65 6d 62 61 6e 74 75 20 67 77 20 75 6e 74 75 6b 20 6d 65 6d 62 75 61 74 20 72 65 73 6f 75 72 63 65 70 61 63 6b 20 69 6e 69 20 3a 33
     74 68 78 20 74 6f 20 0a 2d 20 54 61 6d 61 4d 75 72 61 20 79 61 6e 67 20 73 75 64 61 68 20 6d 65 6d 62 61 6e 74 75 20 67 77 0a 20 20 55 6e 74 75 6b 20 6d 65 6d 62 75 61 74 20 52 65 73 6f 75 72 63 65 20 69 6e 69 20 64 61 72 69 20 30 20 3a 29
     */
 
@@ -14,6 +15,18 @@
       "size": [ "100%" , "100%" ]
     },
 
+    "bg_3": {
+      "type":  "image",
+      "texture": "textures/ui-x/dialog/bg_3",
+      "size": [ "100%" , "100%" ]
+    },
+
+    "bg_4": {
+      "type":  "image",
+      "texture": "textures/ui-x/dialog/bg_4",
+      "size": [ "100%" , "100%" ]
+    },
+
     ///////////////////////////////////////
     //
     // MAIN UI
@@ -22,7 +35,8 @@
 
     "weebs@loli.label": {
       "layer": 5,
-      "text": "Minecraft : Wibu Edition §eBETA",
+      "font_size": "small",
+      "text": "§0Minecraft : Wibu Edition §4ALPHA  | Created By : Farhan & Zal",
       "font_type": "MinecraftTen"
     },
 
@@ -35,11 +49,11 @@
     "logo_ui": { "type": "image", "texture": "textures/ui-x/icon/title", "size": [ "100%" , 95 ]},
     // Versi
     "version_title@custom_settings_section.fxn_label": { "text": "Version :" ,"shadow": false },
-    "version_number@custom_settings_section.fxn_label": { "font_size":"large", "text": "v1.3.5 | Loli" , "shadow": false },
+    "version_number@custom_settings_section.fxn_label": { "font_size":"large", "text": "v1.5 | ALPHA" , "shadow": false },
     "version_about@custom_settings_section.fxn_label": { "text": "Loli = Beta | Milff = Stable" ,"shadow": false },
 
     // Build
     "build_title@custom_settings_section.fxn_label": { "text": "Build : " ,"shadow": false },
-    "build_number@custom_settings_section.fxn_label": { "font_size":"large", "text": "111" , "shadow": false },
-    "about@custom_settings_section.fxn_label": { "text": "Resource Pack Created By Farhan(Han)" ,"shadow": false }
+    "build_number@custom_settings_section.fxn_label": { "font_size":"large", "text": "NaN" , "shadow": false },
+    "about@custom_settings_section.fxn_label": { "text": "§0-30127389" ,"shadow": false }
 }
